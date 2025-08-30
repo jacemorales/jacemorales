@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "title": "Single Video Project",
+        "description": "A project with a single video.",
+        "videos": ["https://www.youtube.com/watch?v=dQw4w9WgXcQ"],
+        "thumbnail": "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg",
+        "technologies": ["Video Editing", "Premiere Pro"],
+        "fullDescription": "This project features a single video. Clicking the thumbnail will open the video in a new tab."
+    },
+    {
+        "id": 2,
+        "title": "Video Slideshow Project",
+        "description": "A project with multiple videos.",
+        "videos": [
+            "https://www.youtube.com/watch?v=VIDEO_ID_1",
+            "https://www.youtube.com/watch?v=VIDEO_ID_2",
+            "https://www.youtube.com/watch?v=VIDEO_ID_3"
+        ],
+        "thumbnail": "https://i.ytimg.com/vi/3tmd-ClpJxA/hqdefault.jpg",
+        "technologies": ["Filmmaking", "After Effects"],
+        "fullDescription": "This project showcases multiple videos. You can navigate through them using the left and right arrows."
+    }
+]

@@ -70,120 +70,47 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Projects Data
-const photoProjects = [
-    {
-        id: 1,
-        title: "E-commerce Platform",
-        description: "A full-featured e-commerce platform with a modern UI and a robust backend.",
-        thumbnail: "projects/imgs/imga.png",
-        technologies: ["React", "Node.js", "MongoDB"],
-        links: { live: "#", github: "#" },
-        fullDescription: "This e-commerce platform was built from the ground up using the MERN stack. It includes features like product search, filtering, user authentication, and a fully functional shopping cart."
-    },
-    {
-        id: 2,
-        title: "Data Visualization Dashboard",
-        description: "An interactive dashboard for visualizing complex datasets.",
-        thumbnail: "projects/imgs/imgb.png",
-        technologies: ["Vue.js", "D3.js", "Python", "Flask"],
-        links: { live: "#", github: "#" },
-        fullDescription: "This project involved creating a dynamic and interactive data visualization dashboard. It uses D3.js to create beautiful and responsive charts and graphs, with a Python/Flask backend to process the data."
-    },
-    {
-        id: 3,
-        title: "Mobile App for Social Networking",
-        description: "A cross-platform mobile app for social networking.",
-        thumbnail: "projects/imgs/imgc.png",
-        technologies: ["Flutter", "Firebase", "Dart"],
-        links: { live: "#", github: "#" },
-        fullDescription: "This mobile app was built using Flutter, allowing it to run on both iOS and Android from a single codebase. It uses Firebase for authentication, database, and storage."
-    },
-    {
-        id: 4,
-        title: "Portfolio Website",
-        description: "A personal portfolio website to showcase my work and skills.",
-        thumbnail: "https://picsum.photos/400/300?random=4",
-        technologies: ["HTML", "CSS", "JavaScript"],
-        links: { live: "#", github: "#" },
-        fullDescription: "This portfolio website was designed and built from scratch using modern web technologies. It is fully responsive and features a clean and modern design."
-    },
-    {
-        id: 5,
-        title: "Task Management App",
-        description: "A simple and intuitive task management app.",
-        thumbnail: "https://picsum.photos/400/300?random=5",
-        technologies: ["React", "Redux", "Firebase"],
-        links: { live: "#", github: "#" },
-        fullDescription: "This task management app helps users stay organized and productive. It features a clean and intuitive user interface, and it uses Firebase for real-time data synchronization."
-    },
-    {
-        id: 6,
-        title: "Weather App",
-        description: "A weather app that provides real-time weather information.",
-        thumbnail: "https://picsum.photos/400/300?random=6",
-        technologies: ["React", "OpenWeatherMap API"],
-        links: { live: "#", github: "#" },
-        fullDescription: "This weather app provides real-time weather information for any city in the world. It uses the OpenWeatherMap API to fetch the weather data, and it features a clean and simple user interface."
+// Fetch and Load Projects
+async function loadProjects() {
+    try {
+        const res = await fetch('image_projects.json');
+        const photoProjects = await res.json();
+
+        const projectsGrid = document.getElementById('projectsGrid');
+        const photoGallery = document.createElement('div');
+        photoGallery.className = 'project-gallery';
+
+        photoProjects.forEach(project => {
+            const projectCard = createProjectCard(project);
+            photoGallery.appendChild(projectCard);
+        });
+
+        projectsGrid.innerHTML = ''; // Clear existing content
+        projectsGrid.appendChild(photoGallery);
+    } catch (error) {
+        console.error('Error loading photo projects:', error);
     }
-];
-
-// Load Projects
-function loadProjects() {
-    const projectsGrid = document.getElementById('projectsGrid');
-    const photoGallery = document.createElement('div');
-    photoGallery.className = 'project-gallery';
-
-    photoProjects.forEach(project => {
-        const projectCard = createProjectCard(project);
-        photoGallery.appendChild(projectCard);
-    });
-
-    projectsGrid.appendChild(photoGallery);
 }
 
-// Video Projects
-const videoProjects = [
-    {
-        id: 7,
-        title: "Video Project 1",
-        description: "A demo video project.",
-        thumbnail: "https://i.ytimg.com/vi/pAsmrKyMqaA/hqdefault.jpg",
-        videoUrl: "file:///C:/Users/lenovo/files/portfolio/projects/vids/0205.mp4",
-        technologies: ["YouTube", "Modal"],
-        fullDescription: "This is a demo  project that opens in a modal player."
-    },
-    {
-        id: 8,
-        title: "Video Project 2",
-        description: "A demo video project.",
-        thumbnail: "https://i.ytimg.com/vi/pAsmrKyMqaA/hqdefault.jpg",
-        videoUrl: "file:///C:/Users/lenovo/files/portfolio/projects/vids/0205.mp4",
-        technologies: ["YouTube", "Modal"],
-        fullDescription: "This is a demo video project that opens in a modal player."
-    },
-    {
-        id: 9,
-        title: "Video Project 3",
-        description: "A demo video project.",
-        thumbnail: "https://i.ytimg.com/vi/pAsmrKyMqaA/hqdefault.jpg",
-        videoUrl: "https://www.youtube.com/watch?v=pAsmrKyMqaA",
-        technologies: ["YouTube", "Modal"],
-        fullDescription: "This is a demo video project that opens in a modal player."
+async function loadVideoProjects() {
+    try {
+        const res = await fetch('video_projects.json');
+        const videoProjects = await res.json();
+
+        const videoProjectsGrid = document.getElementById('videoProjectsGrid');
+        const videoGallery = document.createElement('div');
+        videoGallery.className = 'project-gallery';
+
+        videoProjects.forEach(project => {
+            const projectCard = createProjectCard(project);
+            videoGallery.appendChild(projectCard);
+        });
+
+        videoProjectsGrid.innerHTML = ''; // Clear existing content
+        videoProjectsGrid.appendChild(videoGallery);
+    } catch (error) {
+        console.error('Error loading video projects:', error);
     }
-];
-
-function loadVideoProjects() {
-    const videoProjectsGrid = document.getElementById('videoProjectsGrid');
-    const videoGallery = document.createElement('div');
-    videoGallery.className = 'project-gallery';
-
-    videoProjects.forEach(project => {
-        const projectCard = createProjectCard(project);
-        videoGallery.appendChild(projectCard);
-    });
-
-    videoProjectsGrid.appendChild(videoGallery);
 }
 
 const techStackData = [
@@ -301,15 +228,27 @@ function createProjectCard(project) {
     card.className = 'project-card';
     card.setAttribute('data-project-id', project.id);
 
-    let thumbnailHtml = `<img src="${project.thumbnail}" alt="${project.title}" loading="lazy">`;
-    if (project.videoUrl) {
-        thumbnailHtml += `<div class="play-icon"><i class="fas fa-play"></i></div>`;
-        card.addEventListener('click', () => openProjectModal(project));
-    }
+    const media = project.images || project.videos;
+    const isVideo = !!project.videos;
+
+    let mediaHtml = media.map((src, index) => `
+        <div class="slide ${index === 0 ? 'active' : ''}">
+            <img src="${isVideo ? project.thumbnail : src}" alt="${project.title}" loading="lazy">
+        </div>
+    `).join('');
 
     card.innerHTML = `
         <div class="project-thumbnail">
-            ${thumbnailHtml}
+            <div class="slideshow">
+                ${mediaHtml}
+            </div>
+            ${media.length > 1 ? `
+                <div class="slideshow-nav">
+                    <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            ` : ''}
+            ${isVideo ? `<div class="play-icon"><i class="fas fa-play"></i></div>` : ''}
         </div>
         <div class="project-info">
             <h3 class="project-title">${project.title}</h3>
@@ -319,6 +258,40 @@ function createProjectCard(project) {
             </div>
         </div>
     `;
+
+    if (media.length > 1) {
+        const prevBtn = card.querySelector('.prev');
+        const nextBtn = card.querySelector('.next');
+        let currentIndex = 0;
+
+        const showSlide = (index) => {
+            const slides = card.querySelectorAll('.slide');
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+        };
+
+        prevBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentIndex = (currentIndex - 1 + media.length) % media.length;
+            showSlide(currentIndex);
+        });
+
+        nextBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentIndex = (currentIndex + 1) % media.length;
+            showSlide(currentIndex);
+        });
+    }
+
+    card.addEventListener('click', () => {
+        if (isVideo) {
+            const currentIndex = Array.from(card.querySelectorAll('.slide')).findIndex(slide => slide.classList.contains('active'));
+            window.open(project.videos[currentIndex], '_blank');
+        } else {
+            openProjectModal(project);
+        }
+    });
 
     return card;
 }
@@ -334,16 +307,45 @@ function openProjectModal(project) {
     const modalDescription = document.getElementById('modalDescription');
     const modalTech = document.getElementById('modalTech');
     const modalLinks = document.getElementById('modalLinks');
-    const modalVideoContainer = modal.querySelector('.modal-video');
+    const modalMediaContainer = modal.querySelector('.modal-video'); // Reusing this container
 
     modalTitle.textContent = project.title;
     modalDescription.textContent = project.fullDescription;
 
-    if (project.videoUrl) {
-        const videoId = new URL(project.videoUrl).searchParams.get('v');
-        modalVideoContainer.innerHTML = `<iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    if (project.images && project.images.length > 0) {
+        let currentIndex = 0;
+        const media = project.images;
+
+        const updateMedia = () => {
+            modalMediaContainer.innerHTML = `
+                <div class="modal-slideshow">
+                    <img src="${media[currentIndex]}" alt="${project.title}">
+                    ${media.length > 1 ? `
+                        <div class="slideshow-nav">
+                            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+        };
+
+        updateMedia();
+
+        if (media.length > 1) {
+            modalMediaContainer.addEventListener('click', (e) => {
+                if (e.target.closest('.next')) {
+                    currentIndex = (currentIndex + 1) % media.length;
+                    updateMedia();
+                }
+                if (e.target.closest('.prev')) {
+                    currentIndex = (currentIndex - 1 + media.length) % media.length;
+                    updateMedia();
+                }
+            });
+        }
     } else {
-        modalVideoContainer.innerHTML = '';
+        modalMediaContainer.innerHTML = '';
     }
 
     modalTech.innerHTML = project.technologies.map(tech =>
