@@ -6,11 +6,11 @@
     <title>Jace Morales - Full Stack Developer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 </head>
 <body>
+<noscreenerror>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -40,27 +40,20 @@
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="greeting">Hello, I'm</span>
-                        <span class="name">Jace Morales</span>
-                    </h1>
-                    <h2 class="hero-subtitle">Full Stack Web and App Developer</h2>
+                    <span class="greeting">Hello, I'm Jace Morales</span>
+                    <h1 class="hero-title">Full Stack Developer | Web & Mobile App Consultant</h1>
+                    <p class="hero-subtitle typewriter" data-text="Building Smart, Scalable Apps That Drive Results"></p>
                     <p class="hero-description">
-                        I craft digital experiences that blend beautiful design with powerful functionality.
-                        Passionate about creating innovative solutions that make a difference.
+                        A highly skilled and results-driven Full Stack Web Developer with over 7 years of experience in designing, developing, and maintaining dynamic websites and applications.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View Projects</a>
-                        <div class="social-links">
-                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
-                        </div>
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Hire Me</a>
                     </div>
                 </div>
                 <div class="hero-visual">
-                    <div class="hero-image"><img src="img/passport.jpg">
+                    <div class="hero-image">
+                        <img src="img/passport.jpg" alt="Jace Morales">
                         <div class="floating-elements">
                             <div class="floating-element"></div>
                             <div class="floating-element"></div>
@@ -69,8 +62,11 @@
                     </div>
                 </div>
             </div>
-            <div class="scroll-indicator">
-                <div class="scroll-arrow"></div>
+            <div class="hero-social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://t.me/jacemorales123" class="social-link"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
             </div>
         </div>
     </section>
@@ -112,7 +108,6 @@
                 <div class="about-image">
                     <div class="image-container">
                         <div class="image-placeholder">
-                            <i class="fas fa-user"></i>
                         </div>
                     </div>
                 </div>
@@ -124,114 +119,39 @@
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">A showcase of my recent work and achievements</p>
-            </div>
-            <div class="projects-tabs">
-                <button class="tab-btn active" data-tab="images">Image Gallery</button>
-                <button class="tab-btn" data-tab="videos">Video Showcase</button>
+                <h2 class="section-title">Photo Projects</h2>
+                <p class="section-subtitle">A collection of my recent photo projects</p>
             </div>
             <div class="projects-grid" id="projectsGrid">
-                <!-- Projects will be dynamically loaded here -->
+                <!-- Photo projects will be loaded here -->
+            </div>
+            <div class="show-videos-container">
+                <button id="show-video-projects-btn" class="btn btn-primary">Show Video Projects</button>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <section id="video-projects" class="projects" style="display: none;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Video Projects</h2>
+                <p class="section-subtitle">A collection of my recent video projects</p>
+            </div>
+            <div class="projects-grid" id="videoProjectsGrid">
+                <!-- Video projects will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Tech Stack</h2>
-                <p class="section-subtitle">Technologies and tools I work with</p>
+                <h2 class="section-title">My Tech Stack</h2>
+                <p class="section-subtitle">Technologies I use to build modern web applications</p>
             </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="category-title">Frontend</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <i class="fab fa-react"></i>
-                            <span>React</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-vue"></i>
-                            <span>Vue.js</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-js"></i>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-html5"></i>
-                            <span>HTML5</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-css3-alt"></i>
-                            <span>CSS3</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-sass"></i>
-                            <span>Sass</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="category-title">Backend</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <i class="fab fa-node-js"></i>
-                            <span>Node.js</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>MongoDB</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-server"></i>
-                            <span>Express.js</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-aws"></i>
-                            <span>AWS</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-docker"></i>
-                            <span>Docker</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="category-title">Tools & Design</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <i class="fab fa-figma"></i>
-                            <span>Figma</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-git-alt"></i>
-                            <span>Git</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-palette"></i>
-                            <span>Adobe XD</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-mobile-alt"></i>
-                            <span>Responsive Design</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-rocket"></i>
-                            <span>Performance</span>
-                        </div>
-                    </div>
-                </div>
+            <div id="skills-grid" class="skills-grid">
+                <!-- Skills will be dynamically loaded here -->
             </div>
         </div>
     </section>
@@ -240,59 +160,77 @@
     <section id="employment" class="employment">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Employment History</h2>
-                <p class="section-subtitle">My professional journey and experience</p>
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
             </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Web Development Project Manager</h3>
-                        <h4>CommonwealthAssembly Web Solutions - Abuja</h4>
-                        <p class="timeline-date">January 2020 - Present (5 years)</p>
-                        <ul class="timeline-details">
-                            <li>Lead full-stack development for client projects, overseeing front-end and back-end implementation</li>
-                            <li>Designed and developed responsive mobile-first websites using React and Angular</li>
-                            <li>Integrated third-party APIs and implemented security best practices</li>
-                            <li>Streamlined database management using MySQL and MongoDB</li>
-                            <li>Collaborated with UX/UI designers to enhance user experience</li>
-                        </ul>
+            <div class="employment-grid">
+                <div class="job-card">
+                    <div class="job-header">
+                        <h3 class="job-title">Web Development Project Manager</h3>
+                        <p class="job-company">CommonwealthAssembly Web Solutions</p>
+                        <p class="job-date">Jan 2020 - Present</p>
                     </div>
+                    <ul class="job-details">
+                        <li>Led full-stack development for various client projects.</li>
+                        <li>Designed and developed responsive, mobile-first websites.</li>
+                        <li>Integrated third-party APIs and implemented security best practices.</li>
+                        <li>Collaborated with UX/UI designers to enhance usability.</li>
+                    </ul>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Full Stack Web Developer</h3>
-                        <h4>Pixel Hub Digital Agency - Lagos</h4>
-                        <p class="timeline-date">September 2017 - December 2020 (3 years)</p>
-                        <ul class="timeline-details">
-                            <li>Developed high-performance web applications using ReactJS, Django, Flask, and PHP</li>
-                            <li>Built RESTful APIs for seamless system communication</li>
-                            <li>Managed cloud-based infrastructure on Git</li>
-                            <li>Mentored junior developers in development practices</li>
-                        </ul>
+                <div class="job-card">
+                    <div class="job-header">
+                        <h3 class="job-title">Full Stack Web Developer</h3>
+                        <p class="job-company">Pixel Hub Digital Agency</p>
+                        <p class="job-date">Sep 2017 - Dec 2020</p>
                     </div>
+                    <ul class="job-details">
+                        <li>Developed high-performance web applications.</li>
+                        <li>Built RESTful APIs for seamless communication.</li>
+                        <li>Managed cloud-based infrastructure on Git.</li>
+                        <li>Mentored junior developers in best practices.</li>
+                    </ul>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Senior Web Developer</h3>
-                        <h4>SpringValley Tech Innovations - Port Harcourt</h4>
-                        <p class="timeline-date">August 2015 - September 2017 (2 years)</p>
-                        <ul class="timeline-details">
-                            <li>Developed and maintained websites using HTML, CSS, JavaScript, PHP, and MySQL</li>
-                            <li>Collaborated with senior developers on back-end solutions</li>
-                            <li>Participated in agile development sprints</li>
-                            <li>Conducted quality assurance testing and optimization</li>
-                        </ul>
+                <div class="job-card">
+                    <div class="job-header">
+                        <h3 class="job-title">Senior Web Developer</h3>
+                        <p class="job-company">SpringValley Tech Innovations</p>
+                        <p class="job-date">Aug 2015 - Sep 2017</p>
                     </div>
+                    <ul class="job-details">
+                        <li>Developed and maintained websites using HTML, CSS, JavaScript, and PHP.</li>
+                        <li>Collaborated with senior developers on back-end solutions.</li>
+                        <li>Participated in agile development sprints.</li>
+                    </ul>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>UI Developer</h3>
-                        <h4>Eazx Technologies</h4>
-                        <p class="timeline-date">2024 - Present</p>
-                        <ul class="timeline-details">
-                            <li>Currently working on modern UI development projects</li>
-                        </ul>
+                <div class="job-card">
+                    <div class="job-header">
+                        <h3 class="job-title">UI Developer</h3>
+                        <p class="job-company">Eazx Technologies</p>
+                        <p class="job-date">2024 - Present</p>
                     </div>
+                    <ul class="job-details">
+                        <li>Currently working on modern UI development projects.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Me Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Have a project in mind? I'd love to hear from you.</p>
+            </div>
+            <div class="contact-content">
+                <p class="contact-text">
+                    I'm currently available for freelance work and open to discussing new projects.
+                    If you're looking for a dedicated developer who can bring your ideas to life, let's connect.
+                </p>
+                <div class="contact-buttons">
+                    <a href="dcs/cover_letter.pdf" target="_blank" class="btn btn-primary">View Cover Letter</a>
+                    <a href="dcs/reference_letter.pdf" target="_blank" class="btn btn-secondary">View Reference Letter</a>
                 </div>
             </div>
         </div>
@@ -330,5 +268,15 @@
     </div>
 
     <script src="script.js"></script>
+
+</noscreenerror>
+
+
+
+
+
+<screenerror>
+    <p>Sorry your device is too small to properly display this website</p>
+</screenerror>
 </body>
 </html>
