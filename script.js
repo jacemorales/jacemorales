@@ -1,5 +1,8 @@
 // Portfolio Website JavaScript
 
+const FALLBACK_IMAGE_URL = 'img/no_img.png';
+const FALLBACK_VIDEO_THUMBNAIL_URL = 'img/no_img.png';
+
 // Theme Toggle Functionality
 const themeToggle = document.getElementById('theme-icon');
 const body = document.body;
@@ -70,120 +73,26 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Projects Data
-const photoProjects = [
-    {
-        id: 1,
-        title: "E-commerce Platform",
-        description: "A full-featured e-commerce platform with a modern UI and a robust backend.",
-        thumbnail: "projects/imgs/imga.png",
-        technologies: ["React", "Node.js", "MongoDB"],
-        links: { live: "#", github: "#" },
-        fullDescription: "This e-commerce platform was built from the ground up using the MERN stack. It includes features like product search, filtering, user authentication, and a fully functional shopping cart."
-    },
-    {
-        id: 2,
-        title: "Data Visualization Dashboard",
-        description: "An interactive dashboard for visualizing complex datasets.",
-        thumbnail: "projects/imgs/imgb.png",
-        technologies: ["Vue.js", "D3.js", "Python", "Flask"],
-        links: { live: "#", github: "#" },
-        fullDescription: "This project involved creating a dynamic and interactive data visualization dashboard. It uses D3.js to create beautiful and responsive charts and graphs, with a Python/Flask backend to process the data."
-    },
-    {
-        id: 3,
-        title: "Mobile App for Social Networking",
-        description: "A cross-platform mobile app for social networking.",
-        thumbnail: "projects/imgs/imgc.png",
-        technologies: ["Flutter", "Firebase", "Dart"],
-        links: { live: "#", github: "#" },
-        fullDescription: "This mobile app was built using Flutter, allowing it to run on both iOS and Android from a single codebase. It uses Firebase for authentication, database, and storage."
-    },
-    {
-        id: 4,
-        title: "Portfolio Website",
-        description: "A personal portfolio website to showcase my work and skills.",
-        thumbnail: "https://picsum.photos/400/300?random=4",
-        technologies: ["HTML", "CSS", "JavaScript"],
-        links: { live: "#", github: "#" },
-        fullDescription: "This portfolio website was designed and built from scratch using modern web technologies. It is fully responsive and features a clean and modern design."
-    },
-    {
-        id: 5,
-        title: "Task Management App",
-        description: "A simple and intuitive task management app.",
-        thumbnail: "https://picsum.photos/400/300?random=5",
-        technologies: ["React", "Redux", "Firebase"],
-        links: { live: "#", github: "#" },
-        fullDescription: "This task management app helps users stay organized and productive. It features a clean and intuitive user interface, and it uses Firebase for real-time data synchronization."
-    },
-    {
-        id: 6,
-        title: "Weather App",
-        description: "A weather app that provides real-time weather information.",
-        thumbnail: "https://picsum.photos/400/300?random=6",
-        technologies: ["React", "OpenWeatherMap API"],
-        links: { live: "#", github: "#" },
-        fullDescription: "This weather app provides real-time weather information for any city in the world. It uses the OpenWeatherMap API to fetch the weather data, and it features a clean and simple user interface."
+// Fetch and Load Projects
+async function loadProjects(url, containerId) {
+    try {
+        const res = await fetch(url);
+        const projects = await res.json();
+
+        const projectsGrid = document.getElementById(containerId);
+        const gallery = document.createElement('div');
+        gallery.className = 'project-gallery';
+
+        projects.forEach(project => {
+            const projectCard = createProjectCard(project);
+            gallery.appendChild(projectCard);
+        });
+
+        projectsGrid.innerHTML = ''; // Clear existing content
+        projectsGrid.appendChild(gallery);
+    } catch (error) {
+        console.error(`Error loading projects from ${url}:`, error);
     }
-];
-
-// Load Projects
-function loadProjects() {
-    const projectsGrid = document.getElementById('projectsGrid');
-    const photoGallery = document.createElement('div');
-    photoGallery.className = 'project-gallery';
-
-    photoProjects.forEach(project => {
-        const projectCard = createProjectCard(project);
-        photoGallery.appendChild(projectCard);
-    });
-
-    projectsGrid.appendChild(photoGallery);
-}
-
-// Video Projects
-const videoProjects = [
-    {
-        id: 7,
-        title: "Video Project 1",
-        description: "A demo video project.",
-        thumbnail: "https://i.ytimg.com/vi/pAsmrKyMqaA/hqdefault.jpg",
-        videoUrl: "file:///C:/Users/lenovo/files/portfolio/projects/vids/0205.mp4",
-        technologies: ["YouTube", "Modal"],
-        fullDescription: "This is a demo  project that opens in a modal player."
-    },
-    {
-        id: 8,
-        title: "Video Project 2",
-        description: "A demo video project.",
-        thumbnail: "https://i.ytimg.com/vi/pAsmrKyMqaA/hqdefault.jpg",
-        videoUrl: "file:///C:/Users/lenovo/files/portfolio/projects/vids/0205.mp4",
-        technologies: ["YouTube", "Modal"],
-        fullDescription: "This is a demo video project that opens in a modal player."
-    },
-    {
-        id: 9,
-        title: "Video Project 3",
-        description: "A demo video project.",
-        thumbnail: "https://i.ytimg.com/vi/pAsmrKyMqaA/hqdefault.jpg",
-        videoUrl: "https://www.youtube.com/watch?v=pAsmrKyMqaA",
-        technologies: ["YouTube", "Modal"],
-        fullDescription: "This is a demo video project that opens in a modal player."
-    }
-];
-
-function loadVideoProjects() {
-    const videoProjectsGrid = document.getElementById('videoProjectsGrid');
-    const videoGallery = document.createElement('div');
-    videoGallery.className = 'project-gallery';
-
-    videoProjects.forEach(project => {
-        const projectCard = createProjectCard(project);
-        videoGallery.appendChild(projectCard);
-    });
-
-    videoProjectsGrid.appendChild(videoGallery);
 }
 
 const techStackData = [
@@ -295,21 +204,102 @@ function generateTechStack(containerId) {
     }
 }
 
+// Slideshow Logic
+function initializeSlideshow(container, project, isModal) {
+    const media = project.images || project.videos;
+    if (media.length <= 1) return;
+
+    const prevBtn = container.querySelector('.prev');
+    const nextBtn = container.querySelector('.next');
+    let currentIndex = 0;
+    let slideInterval;
+
+    const showSlide = (index) => {
+        if (isModal) {
+            const mediaContainer = container.querySelector('.modal-slideshow-media');
+            const isVideo = !!project.videos;
+            let mediaContent = '';
+            if (isVideo) {
+                mediaContent = `
+                    <video src="${media[index]}" controls autoplay muted onerror="this.onerror=null; this.parentElement.innerHTML = '<img src=\\'${FALLBACK_VIDEO_THUMBNAIL_URL}\\' alt=\\'Error loading video\\'>';">
+                        Your browser does not support the video tag.
+                    </video>`;
+            } else {
+                mediaContent = `<img src="${media[index]}" alt="${project.title}" onerror="this.onerror=null; this.src='${FALLBACK_IMAGE_URL}';">`;
+            }
+            mediaContainer.innerHTML = mediaContent;
+        } else {
+            const slides = container.querySelectorAll('.slide');
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+        }
+    };
+
+    const nextSlide = () => {
+        currentIndex = (currentIndex + 1) % media.length;
+        showSlide(currentIndex);
+    };
+
+    const startSlideshow = () => {
+        if (slideInterval) clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, 5000);
+    };
+
+    const stopSlideshow = () => {
+        clearInterval(slideInterval);
+    };
+
+    if (prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            stopSlideshow();
+            currentIndex = (currentIndex - 1 + media.length) % media.length;
+            showSlide(currentIndex);
+            startSlideshow();
+        });
+
+        nextBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            stopSlideshow();
+            nextSlide();
+            startSlideshow();
+        });
+    }
+
+    container.addEventListener('mouseenter', stopSlideshow);
+    container.addEventListener('mouseleave', startSlideshow);
+
+    startSlideshow();
+}
+
 // Create Project Card
 function createProjectCard(project) {
     const card = document.createElement('div');
     card.className = 'project-card';
     card.setAttribute('data-project-id', project.id);
 
-    let thumbnailHtml = `<img src="${project.thumbnail}" alt="${project.title}" loading="lazy">`;
-    if (project.videoUrl) {
-        thumbnailHtml += `<div class="play-icon"><i class="fas fa-play"></i></div>`;
-        card.addEventListener('click', () => openProjectModal(project));
-    }
+    const media = project.images || project.videos;
+    const isVideo = !!project.videos;
+
+    let mediaHtml = media.map((src, index) => `
+        <div class="slide ${index === 0 ? 'active' : ''}">
+            <img src="${isVideo ? project.thumbnail : src}" alt="${project.title}" loading="lazy" onerror="this.onerror=null; this.src='${isVideo ? FALLBACK_VIDEO_THUMBNAIL_URL : FALLBACK_IMAGE_URL}';">
+        </div>
+    `).join('');
 
     card.innerHTML = `
         <div class="project-thumbnail">
-            ${thumbnailHtml}
+            <div class="slideshow">
+                ${mediaHtml}
+            </div>
+            ${media.length > 1 ? `
+                <div class="slideshow-nav">
+                    <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            ` : ''}
+            ${isVideo ? `<div class="play-icon"><i class="fas fa-play"></i></div>` : ''}
         </div>
         <div class="project-info">
             <h3 class="project-title">${project.title}</h3>
@@ -319,6 +309,14 @@ function createProjectCard(project) {
             </div>
         </div>
     `;
+
+    if (media.length > 1) {
+        initializeSlideshow(card, project, false);
+    }
+
+    card.addEventListener('click', () => {
+        openProjectModal(project);
+    });
 
     return card;
 }
@@ -334,16 +332,37 @@ function openProjectModal(project) {
     const modalDescription = document.getElementById('modalDescription');
     const modalTech = document.getElementById('modalTech');
     const modalLinks = document.getElementById('modalLinks');
-    const modalVideoContainer = modal.querySelector('.modal-video');
+    const modalMediaContainer = modal.querySelector('.modal-video');
 
     modalTitle.textContent = project.title;
     modalDescription.textContent = project.fullDescription;
 
-    if (project.videoUrl) {
-        const videoId = new URL(project.videoUrl).searchParams.get('v');
-        modalVideoContainer.innerHTML = `<iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    const media = project.images || project.videos;
+
+    let initialMediaContent = '';
+    if (project.videos) {
+        initialMediaContent = `
+            <video src="${media[0]}" controls autoplay muted onerror="this.onerror=null; this.parentElement.innerHTML = '<img src=\\'${FALLBACK_VIDEO_THUMBNAIL_URL}\\' alt=\\'Error loading video\\'>';">
+                Your browser does not support the video tag.
+            </video>`;
     } else {
-        modalVideoContainer.innerHTML = '';
+        initialMediaContent = `<img src="${media[0]}" alt="${project.title}" onerror="this.onerror=null; this.src='${FALLBACK_IMAGE_URL}';">`;
+    }
+
+    modalMediaContainer.innerHTML = `
+        <div class="modal-slideshow">
+            <div class="modal-slideshow-media">${initialMediaContent}</div>
+            ${media.length > 1 ? `
+                <div class="slideshow-nav">
+                    <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            ` : ''}
+        </div>
+    `;
+
+    if (media.length > 1) {
+        initializeSlideshow(modalMediaContainer.querySelector('.modal-slideshow'), project, true);
     }
 
     modalTech.innerHTML = project.technologies.map(tech =>
@@ -365,9 +384,10 @@ function openProjectModal(project) {
 
 function closeProjectModal() {
     if (!modal) return;
-    const iframe = modal.querySelector('iframe');
-    if (iframe) {
-        iframe.src = '';
+    const video = modal.querySelector('video');
+    if (video) {
+        video.pause();
+        video.src = '';
     }
     modal.style.display = 'none';
     document.body.style.overflow = 'auto';
@@ -401,13 +421,8 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.style.display = 'none';
     }
 
-    // Check for elements to decide which page is loaded
     if (document.getElementById('projectsGrid')) {
-        loadProjects();
-    }
-
-    if (document.getElementById('skills-grid')) {
-        generateTechStack('skills-grid');
+        loadProjects('projects_image.json', 'projectsGrid');
     }
 
     const showVideosBtn = document.getElementById('show-video-projects-btn');
@@ -416,9 +431,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (showVideosBtn && videoProjectsSection) {
         showVideosBtn.addEventListener('click', () => {
             videoProjectsSection.style.display = 'block';
-            loadVideoProjects();
+            loadProjects('projects_video.json', 'videoProjectsGrid');
             showVideosBtn.style.display = 'none';
         });
+    }
+
+    if (document.getElementById('skills-grid')) {
+        generateTechStack('skills-grid');
     }
     
     const typewriterElement = document.querySelector('.typewriter');
@@ -460,12 +479,4 @@ document.addEventListener('DOMContentLoaded', () => {
             closeProjectModal();
         }
     });
-<<<<<<< HEAD
 });
-=======
-<<<<<<< HEAD
-});
-=======
-});
->>>>>>> 7d3cbfff3f5bfda3589af0f6f844fcdfb2f81ee9
->>>>>>> 450de5e (My Portfolio)
