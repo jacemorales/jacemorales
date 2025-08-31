@@ -879,6 +879,8 @@ section {
     background-color: #000;
 }
 
+.modal-slideshow-media{height: inherit;}
+
 .modal-video iframe,
 .modal-slideshow img,
 .modal-slideshow video {
