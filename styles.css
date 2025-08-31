@@ -437,7 +437,7 @@ section {
     right: 0;
     bottom: 0;
     background: url('img/about_img.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     border-radius: 15px;
 }
@@ -874,7 +874,7 @@ section {
 }
 
 .modal-video {
-    width: 100%;
+    width: 50%;
     position: relative;
     /* padding-bottom: 56.25%; 16:9 aspect ratio */
     background-color: #000;
@@ -899,8 +899,9 @@ section {
 }
 
 .modal-info {
-    padding: 1.5rem;
     overflow-y: auto;
+     padding: 2rem;
+    width: 50%;
 }
 
 
@@ -920,10 +921,6 @@ section {
     }
 }
 
-.modal-info {
-  padding: 2rem;
-}
-
 .modal-info h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
@@ -933,7 +930,7 @@ section {
 .modal-info p {
   color: var(--text-secondary);
   line-height: 1.6;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .modal-tech {
@@ -945,14 +942,14 @@ section {
 .modal-links {
   display: flex;
   gap: 1rem;
+    margin-top: 0.5rem;
 }
 
 .modal-links a {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
   background: var(--primary-color);
   color: white;
   text-decoration: none;
-  border-radius: 25px;
   font-weight: 500;
   transition: all 0.3s ease;
 }
