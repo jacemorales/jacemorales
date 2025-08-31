@@ -909,14 +909,10 @@ section {
         flex-direction: column;
     }
     .modal-video {
-        padding-bottom: 56.25%; /* 16:9 aspect ratio */
-        height: 0;
+
     }
     .modal-video iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
+        position: relative;
         height: 100%;
     }
     .modal-info {
