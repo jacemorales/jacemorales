@@ -205,20 +205,34 @@ function generateTechStack(containerId) {
 }
 
 // Slideshow Logic
-function initializeSlideshow(container, media, isModal) {
+function initializeSlideshow(container, project, isModal) {
+    const media = project.images || project.videos;
+    if (media.length <= 1) return;
+
     const prevBtn = container.querySelector('.prev');
     const nextBtn = container.querySelector('.next');
     let currentIndex = 0;
     let slideInterval;
 
     const showSlide = (index) => {
-        const slides = container.querySelectorAll('.slide');
-        slides.forEach((slide, i) => {
-            slide.classList.toggle('active', i === index);
-        });
         if (isModal) {
-            const video = container.querySelector('video');
-            if (video) video.pause();
+            const mediaContainer = container.querySelector('.modal-slideshow-media');
+            const isVideo = !!project.videos;
+            let mediaContent = '';
+            if (isVideo) {
+                mediaContent = `
+                    <video src="${media[index]}" controls autoplay muted onerror="this.onerror=null; this.parentElement.innerHTML = '<img src=\\'${FALLBACK_VIDEO_THUMBNAIL_URL}\\' alt=\\'Error loading video\\'>';">
+                        Your browser does not support the video tag.
+                    </video>`;
+            } else {
+                mediaContent = `<img src="${media[index]}" alt="${project.title}" onerror="this.onerror=null; this.src='${FALLBACK_IMAGE_URL}';">`;
+            }
+            mediaContainer.innerHTML = mediaContent;
+        } else {
+            const slides = container.querySelectorAll('.slide');
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
         }
     };
 
@@ -297,7 +311,7 @@ function createProjectCard(project) {
     `;
 
     if (media.length > 1) {
-        initializeSlideshow(card, media, false);
+        initializeSlideshow(card, project, false);
     }
 
     card.addEventListener('click', () => {
@@ -324,37 +338,32 @@ function openProjectModal(project) {
     modalDescription.textContent = project.fullDescription;
 
     const media = project.images || project.videos;
-    const isVideo = !!project.videos;
-    let currentIndex = 0;
 
-    const updateMedia = () => {
-        let mediaContent = '';
-        if (isVideo) {
-            mediaContent = `
-                <video src="${media[currentIndex]}" controls autoplay muted onerror="this.onerror=null; this.parentElement.innerHTML = '<img src=\\'${FALLBACK_VIDEO_THUMBNAIL_URL}\\' alt=\\'Error loading video\\'>';">
-                    Your browser does not support the video tag.
-                </video>`;
-        } else {
-            mediaContent = `<img src="${media[currentIndex]}" alt="${project.title}" onerror="this.onerror=null; this.src='${FALLBACK_IMAGE_URL}';">`;
-        }
+    let initialMediaContent = '';
+    if (project.videos) {
+        initialMediaContent = `
+            <video src="${media[0]}" controls autoplay muted onerror="this.onerror=null; this.parentElement.innerHTML = '<img src=\\'${FALLBACK_VIDEO_THUMBNAIL_URL}\\' alt=\\'Error loading video\\'>';">
+                Your browser does not support the video tag.
+            </video>`;
+    } else {
+        initialMediaContent = `<img src="${media[0]}" alt="${project.title}" onerror="this.onerror=null; this.src='${FALLBACK_IMAGE_URL}';">`;
+    }
 
-        modalMediaContainer.innerHTML = `
-            <div class="modal-slideshow">
-                ${mediaContent}
-                ${media.length > 1 ? `
-                    <div class="slideshow-nav">
-                        <button class="prev"><i class="fas fa-chevron-left"></i></button>
-                        <button class="next"><i class="fas fa-chevron-right"></i></button>
-                    </div>
-                ` : ''}
-            </div>
-        `;
-        if (media.length > 1) {
-            initializeSlideshow(modalMediaContainer, media, true);
-        }
-    };
+    modalMediaContainer.innerHTML = `
+        <div class="modal-slideshow">
+            <div class="modal-slideshow-media">${initialMediaContent}</div>
+            ${media.length > 1 ? `
+                <div class="slideshow-nav">
+                    <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            ` : ''}
+        </div>
+    `;
 
-    updateMedia();
+    if (media.length > 1) {
+        initializeSlideshow(modalMediaContainer.querySelector('.modal-slideshow'), project, true);
+    }
 
     modalTech.innerHTML = project.technologies.map(tech =>
         `<span class="tech-tag">${tech}</span>`

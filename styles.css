@@ -437,7 +437,7 @@ section {
     right: 0;
     bottom: 0;
     background: url('img/about_img.png');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     border-radius: 15px;
 }
@@ -482,60 +482,17 @@ section {
   overflow: hidden;
 }
 
-.project-thumbnail .slideshow {
-    position: relative;
-    width: 100%;
-    height: 100%;
+.project-thumbnail img,
+.project-thumbnail video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-.project-thumbnail .slide {
-    display: none;
-    width: 100%;
-    height: 100%;
-}
-
-.project-thumbnail .slide.active {
-    display: block;
-}
-
-.project-thumbnail img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover .project-thumbnail img {
-    transform: scale(1.1);
-}
-
-.slideshow-nav {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.project-card:hover .slideshow-nav {
-    opacity: 1;
-}
-
-.slideshow-nav button {
-    background: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    padding: 0.5rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.slideshow-nav button:hover {
-    background: rgba(0, 0, 0, 0.8);
+.project-card:hover .project-thumbnail img,
+.project-card:hover .project-thumbnail video {
+  transform: scale(1.1);
 }
 
 .project-info {
@@ -803,14 +760,13 @@ section {
     display: flex;
 }
 
-#show-video-projects-btn {
-    font-size: 1rem;
-    padding: 0.8rem 2rem;
-    border-radius: 50px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
+#show-video-projects-btn{
+      border-radius: 8px;
+    font-family: 'FontAwesome';
+    font-size: 12px;
+    letter-spacing: 3px;
+    padding: 10px 40px;
+    line-height: 2;
 }
 
 /* Modal */
@@ -874,34 +830,24 @@ section {
 }
 
 .modal-video {
-    width: 50%;
+    width: 100%;
     position: relative;
     /* padding-bottom: 56.25%; 16:9 aspect ratio */
     background-color: #000;
 }
 
-.modal-video iframe,
-.modal-slideshow img,
-.modal-slideshow video {
+.modal-video iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     border: none;
-    object-fit: contain;
-}
-
-.modal-slideshow {
-    position: relative;
-    width: 100%;
-    height: 100%;
 }
 
 .modal-info {
+    padding: 1.5rem;
     overflow-y: auto;
-     padding: 2rem;
-    width: 50%;
 }
 
 
@@ -921,6 +867,10 @@ section {
     }
 }
 
+.modal-info {
+  padding: 2rem;
+}
+
 .modal-info h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
@@ -930,7 +880,7 @@ section {
 .modal-info p {
   color: var(--text-secondary);
   line-height: 1.6;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .modal-tech {
@@ -942,14 +892,14 @@ section {
 .modal-links {
   display: flex;
   gap: 1rem;
-    margin-top: 0.5rem;
 }
 
 .modal-links a {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   background: var(--primary-color);
   color: white;
   text-decoration: none;
+  border-radius: 25px;
   font-weight: 500;
   transition: all 0.3s ease;
 }
