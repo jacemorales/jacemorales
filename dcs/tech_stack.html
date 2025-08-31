@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Full Tech Stack - Table View</title>
@@ -104,5 +105,203 @@
     </tr>
   </table>
 
+=======
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jace Morales - Tech Stack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #5E5DF0;
+            --bg-primary: #fdfdff;
+            --bg-secondary: #f5f5fa;
+            --text-primary: #333;
+            --shadow-medium: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .skill-category {
+            background: #fff;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: var(--shadow-medium);
+        }
+        .category-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .skill-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.5rem 1rem;
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .skill-item i, .skill-item svg {
+            font-size: 1.2rem;
+            width: 1.2rem;
+            height: 1.2rem;
+            fill: var(--primary-color);
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section-header">
+            <h1 class="section-title">My Tech Stack</h1>
+        </div>
+        <div id="skills-grid" class="skills-grid">
+            <!-- Skills will be dynamically loaded here -->
+        </div>
+    </div>
+    <script>
+        const techStackData = [
+            // Markup & Styling
+            { name: "HTML", icon: "fab fa-html5", category: "Markup & Styling" },
+            { name: "CSS", icon: "fab fa-css3-alt", category: "Markup & Styling" },
+            { name: "Sass", icon: "fab fa-sass", category: "Markup & Styling" },
+            { name: "Tailwind CSS", icon: "fas fa-wind", category: "Markup & Styling" },
+            { name: "Bootstrap", icon: "fab fa-bootstrap", category: "Markup & Styling" },
+
+            // Programming Languages
+            { name: "JavaScript (ES6+)", icon: "fab fa-js-square", category: "Programming Languages" },
+            { name: "TypeScript", icon: "fab fa-js-square", category: "Programming Languages" },
+            { name: "PHP", icon: "fab fa-php", category: "Programming Languages" },
+            { name: "Ruby", icon: "fas fa-gem", category: "Programming Languages" },
+            { name: "Python", icon: "fab fa-python", category: "Programming Languages" },
+            { name: "Kotlin", icon: "fab fa-android", category: "Programming Languages" },
+            { name: "Dart", icon: "fas fa-gem", category: "Programming Languages" },
+
+            // Frontend Frameworks
+            { name: "React", icon: "fab fa-react", category: "Frontend Frameworks" },
+            { name: "Vue", icon: "fab fa-vuejs", category: "Frontend Frameworks" },
+            { name: "AngularJS", icon: "fab fa-angular", category: "Frontend Frameworks" },
+            { name: "Next.js", icon: "fas fa-arrow-right", category: "Frontend Frameworks" },
+            { name: "jQuery", icon: "fab fa-js-square", category: "Frontend Frameworks" },
+            { name: "Lodash", icon: "fab fa-js-square", category: "Frontend Frameworks" },
+            { name: "UnderscoreJS", icon: "fab fa-js-square", category: "Frontend Frameworks" },
+            { name: "MeteorJS", icon: "fas fa-meteor", category: "Frontend Frameworks" },
+            { name: "Three.js", icon: "fas fa-cube", category: "Frontend Frameworks" },
+
+            // Backend Frameworks
+            { name: "Laravel", icon: "fab fa-laravel", category: "Backend Frameworks" },
+            { name: "Ruby on Rails", icon: "fas fa-gem", category: "Backend Frameworks" },
+            { name: "Django", icon: "fab fa-python", category: "Backend Frameworks" },
+            { name: "Flask", icon: "fab fa-python", category: "Backend Frameworks" },
+            { name: "FastAPI", icon: "fab fa-python", category: "Backend Frameworks" },
+            { name: "Express.js", icon: "fab fa-node-js", category: "Backend Frameworks" },
+            { name: "NestJS", icon: "fab fa-node-js", category: "Backend Frameworks" },
+
+            // Databases
+            { name: "MySQL", icon: "fas fa-database", category: "Databases" },
+            { name: "PostgreSQL", icon: "fas fa-database", category: "Databases" },
+            { name: "MongoDB", icon: "fas fa-database", category: "Databases" },
+            { name: "Redis", icon: "fas fa-database", category: "Databases" },
+
+            // Design Skills
+            { name: "UI/UX Design", icon: "fas fa-palette", category: "Design" },
+
+            // DevOps & Tools
+            { name: "Git", icon: "fab fa-git-alt", category: "DevOps & Tools" },
+            { name: "GitHub", icon: "fab fa-github", category: "DevOps & Tools" },
+            { name: "Docker", icon: "fab fa-docker", category: "DevOps & Tools" },
+            { name: "npm / yarn", icon: "fab fa-npm", category: "DevOps & Tools" },
+            { name: "Postman", icon: "fas fa-rocket", category: "DevOps & Tools" },
+            { name: "VS Code", icon: "fas fa-code", category: "DevOps & Tools" },
+            { name: "Firebase", icon: "fas fa-database", category: "DevOps & Tools" },
+            { name: "Vercel", icon: "fas fa-cloud-upload-alt", category: "DevOps & Tools" },
+            { name: "Netlify", icon: "fas fa-cloud-upload-alt", category: "DevOps & Tools" },
+
+            // Other
+            { name: "AJAX", icon: "fas fa-bolt", category: "Other" },
+            { name: "REST", icon: "fas fa-server", category: "Other" },
+            { name: "GraphQL", icon: "fas fa-project-diagram", category: "Other" }
+        ];
+
+        function generateTechStack(containerId) {
+            const container = document.getElementById(containerId);
+            if (!container) return;
+            container.innerHTML = '';
+
+            const techByCategory = techStackData.reduce((acc, tech) => {
+                const { category } = tech;
+                if (!acc[category]) {
+                    acc[category] = [];
+                }
+                acc[category].push(tech);
+                return acc;
+            }, {});
+
+            for (const category in techByCategory) {
+                const categoryEl = document.createElement('div');
+                categoryEl.className = 'skill-category';
+
+                const categoryTitle = document.createElement('h3');
+                categoryTitle.className = 'category-title';
+                categoryTitle.textContent = category;
+                categoryEl.appendChild(categoryTitle);
+
+                const skillsList = document.createElement('div');
+                skillsList.className = 'skills-list';
+
+                techByCategory[category].forEach(skill => {
+                    const skillItem = document.createElement('div');
+                    skillItem.className = 'skill-item';
+
+                    let iconHtml = '';
+                    // Note: This simplified version for the standalone page does not render SVGs.
+                    // It will only render Font Awesome icons.
+                    if (!skill.icon.startsWith('<svg')) {
+                        iconHtml = `<i class="${skill.icon}"></i>`;
+                    }
+
+                    skillItem.innerHTML = `${iconHtml}<span>${skill.name}</span>`;
+                    skillsList.appendChild(skillItem);
+                });
+
+                categoryEl.appendChild(skillsList);
+                container.appendChild(categoryEl);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            generateTechStack('skills-grid');
+        });
+    </script>
+>>>>>>> 450de5e (My Portfolio)
 </body>
 </html>
