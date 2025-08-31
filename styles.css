@@ -436,7 +436,15 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
+<<<<<<< HEAD
     background: url('img/about_img.png');
+=======
+<<<<<<< HEAD
+    background: url('https://picsum.photos/seed/developer/800/600');
+=======
+    background: url('img/about_img.png');
+>>>>>>> 7d3cbfff3f5bfda3589af0f6f844fcdfb2f81ee9
+>>>>>>> 450de5e (My Portfolio)
     background-size: cover;
     background-position: center;
     border-radius: 15px;

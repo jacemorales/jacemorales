@@ -279,4 +279,293 @@
     <p>Sorry your device is too small to properly display this website</p>
 </screenerror>
 </body>
+<<<<<<< HEAD
 </html>
+=======
+<<<<<<< HEAD
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jace Morales - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+<noscreenerror>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#employment" class="nav-link">Experience</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="greeting">Hello, I'm Jace Morales</span>
+                    <h1 class="hero-title">Full Stack Developer | Web & Mobile App Consultant</h1>
+                    <p class="hero-subtitle typewriter" data-text="Building Smart, Scalable Apps That Drive Results"></p>
+                    <p class="hero-description">
+                        A highly skilled and results-driven Full Stack Web Developer with over 7 years of experience in designing, developing, and maintaining dynamic websites and applications.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Hire Me</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image">
+                        <img src="img/passport.jpg" alt="Jace Morales">
+                        <div class="floating-elements">
+                            <div class="floating-element"></div>
+                            <div class="floating-element"></div>
+                            <div class="floating-element"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://t.me/jacemorales123" class="social-link"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate developer with a keen eye for design</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm a passionate Full Stack Developer with over 3 years of experience in creating 
+                        digital solutions that combine beautiful design with robust functionality. My expertise 
+                        spans across modern web technologies, UI/UX design principles, and scalable backend systems.
+                    </p>
+                    <p class="about-description">
+                        I believe in writing clean, maintainable code and creating user experiences that are 
+                        not just functional, but delightful. When I'm not coding, you'll find me exploring 
+                        new technologies, contributing to open source projects, or sketching design ideas.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">25+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <div class="image-placeholder">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Photo Projects</h2>
+                <p class="section-subtitle">A collection of my recent photo projects</p>
+            </div>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Photo projects will be loaded here -->
+            </div>
+            <div class="show-videos-container">
+                <button id="show-video-projects-btn" class="btn btn-primary">Show Video Projects</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="video-projects" class="projects" style="display: none;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Video Projects</h2>
+                <p class="section-subtitle">A collection of my recent video projects</p>
+            </div>
+            <div class="projects-grid" id="videoProjectsGrid">
+                <!-- Video projects will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Tech Stack</h2>
+                <p class="section-subtitle">Technologies I use to build modern web applications</p>
+            </div>
+            <div id="skills-grid" class="skills-grid">
+                <!-- Skills will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Employment History Section -->
+    <section id="employment" class="employment">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            <div class="employment-grid">
+                <div class="job-card">
+                    <div class="job-header">
+                        <h3 class="job-title">Web Development Project Manager</h3>
+                        <p class="job-company">CommonwealthAssembly Web Solutions</p>
+                        <p class="job-date">Jan 2020 - Present</p>
+                    </div>
+                    <ul class="job-details">
+                        <li>Led full-stack development for various client projects.</li>
+                        <li>Designed and developed responsive, mobile-first websites.</li>
+                        <li>Integrated third-party APIs and implemented security best practices.</li>
+                        <li>Collaborated with UX/UI designers to enhance usability.</li>
+                    </ul>
+                </div>
+                <div class="job-card">
+                    <div class="job-header">
+                        <h3 class="job-title">Full Stack Web Developer</h3>
+                        <p class="job-company">Pixel Hub Digital Agency</p>
+                        <p class="job-date">Sep 2017 - Dec 2020</p>
+                    </div>
+                    <ul class="job-details">
+                        <li>Developed high-performance web applications.</li>
+                        <li>Built RESTful APIs for seamless communication.</li>
+                        <li>Managed cloud-based infrastructure on Git.</li>
+                        <li>Mentored junior developers in best practices.</li>
+                    </ul>
+                </div>
+                <div class="job-card">
+                    <div class="job-header">
+                        <h3 class="job-title">Senior Web Developer</h3>
+                        <p class="job-company">SpringValley Tech Innovations</p>
+                        <p class="job-date">Aug 2015 - Sep 2017</p>
+                    </div>
+                    <ul class="job-details">
+                        <li>Developed and maintained websites using HTML, CSS, JavaScript, and PHP.</li>
+                        <li>Collaborated with senior developers on back-end solutions.</li>
+                        <li>Participated in agile development sprints.</li>
+                    </ul>
+                </div>
+                <div class="job-card">
+                    <div class="job-header">
+                        <h3 class="job-title">UI Developer</h3>
+                        <p class="job-company">Eazx Technologies</p>
+                        <p class="job-date">2024 - Present</p>
+                    </div>
+                    <ul class="job-details">
+                        <li>Currently working on modern UI development projects.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Me Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Have a project in mind? I'd love to hear from you.</p>
+            </div>
+            <div class="contact-content">
+                <p class="contact-text">
+                    I'm currently available for freelance work and open to discussing new projects.
+                    If you're looking for a dedicated developer who can bring your ideas to life, let's connect.
+                </p>
+                <div class="contact-buttons">
+                    <a href="dcs/cover_letter.pdf" target="_blank" class="btn btn-primary">View Cover Letter</a>
+                    <a href="dcs/reference_letter.pdf" target="_blank" class="btn btn-secondary">View Reference Letter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Jace Morales. All rights reserved.</p>
+                <p>Built with modern web technologies</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-video">
+                    <video id="modalVideo" controls>
+                        <source src="" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="modal-info">
+                    <h3 id="modalTitle"></h3>
+                    <p id="modalDescription"></p>
+                    <div class="modal-tech" id="modalTech"></div>
+                    <div class="modal-links" id="modalLinks"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</noscreenerror>
+
+
+
+
+
+<screenerror>
+    <p>Sorry your device is too small to properly display this website</p>
+</screenerror>
+</body>
+</html>
+=======
+</html>
+>>>>>>> 7d3cbfff3f5bfda3589af0f6f844fcdfb2f81ee9
+>>>>>>> 450de5e (My Portfolio)

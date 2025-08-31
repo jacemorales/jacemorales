@@ -460,4 +460,12 @@ document.addEventListener('DOMContentLoaded', () => {
             closeProjectModal();
         }
     });
+<<<<<<< HEAD
 });
+=======
+<<<<<<< HEAD
+});
+=======
+});
+>>>>>>> 7d3cbfff3f5bfda3589af0f6f844fcdfb2f81ee9
+>>>>>>> 450de5e (My Portfolio)
