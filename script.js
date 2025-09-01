@@ -369,11 +369,10 @@ function openProjectModal(project) {
         `<span class="tech-tag">${tech}</span>`
     ).join('');
 
-    if (project.links) {
-        modalLinks.innerHTML = `
-            <a href="${project.links.live}" target="_blank" class="btn btn-primary">Live Demo</a>
-            <a href="${project.links.github}" target="_blank" class="btn btn-secondary">GitHub</a>
-        `;
+    if (project.links && Array.isArray(project.links)) {
+        modalLinks.innerHTML = project.links.map(link =>
+            `<a href="${link.url}" target="_blank" class="btn ${link.type === 'primary' ? 'btn-primary' : 'btn-secondary'}">${link.name}</a>`
+        ).join('');
     } else {
         modalLinks.innerHTML = '';
     }
