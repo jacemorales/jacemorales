@@ -1,7 +1,7 @@
 // Portfolio Website JavaScript
 
 const FALLBACK_IMAGE_URL = 'img/no_img.png';
-const FALLBACK_VIDEO_THUMBNAIL_URL = 'img/no_img.png';
+const FALLBACK_VIDEO_THUMBNAIL_URL = 'img/no_vid.png';
 
 // Theme Toggle Functionality
 const themeToggle = document.getElementById('theme-icon');
