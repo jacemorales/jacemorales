@@ -925,7 +925,7 @@ section {
 }
 
 .modal-content {
-    margin-top: auto;
+    margin: auto;
     max-height: unset;
 }
 
