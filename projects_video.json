@@ -6,6 +6,9 @@
         "videos": ["http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"],
         "thumbnail": "https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217",
         "technologies": ["Video Editing", "Premiere Pro"],
+        "links": [
+            { "name": "Watch", "url": "#", "type": "primary" }
+        ],
         "fullDescription": "This project features a single video. Clicking the thumbnail will open the video in the modal."
     },
     {
@@ -19,6 +22,10 @@
         ],
         "thumbnail": "https://orange.blender.org/wp-content/themes/orange/images/header.jpg",
         "technologies": ["Filmmaking", "After Effects"],
+        "links": [
+            { "name": "Watch on YouTube", "url": "#", "type": "primary" },
+            { "name": "Source Files", "url": "#", "type": "secondary" }
+        ],
         "fullDescription": "This project showcases multiple videos. You can navigate through them using the left and right arrows."
     }
 ]

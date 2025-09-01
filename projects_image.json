@@ -4,8 +4,11 @@
         "title": "Single Image Project",
         "description": "A project with just one beautiful image.",
         "images": ["https://picsum.photos/800/600?random=1"],
-        "technologies": ["Photography"],
-        "links": { "live": "#", "github": "#", "linkedin": "#" },
+        "technologies": ["Photography", "Photoshop"],
+        "links": [
+            { "name": "Live Demo", "url": "#", "type": "primary" },
+            { "name": "GitHub", "url": "#", "type": "secondary" }
+        ],
         "fullDescription": "This project showcases a single, high-resolution image. It's a demonstration of a project with only one image."
     },
     {
@@ -18,7 +21,10 @@
             "https://picsum.photos/800/600?random=4"
         ],
         "technologies": ["Photography", "Lightroom"],
-        "links": { "live": "#", "github": "#" },
+        "links": [
+            { "name": "Live Demo", "url": "#", "type": "primary" },
+            { "name": "GitHub", "url": "#", "type": "secondary" }
+        ],
         "fullDescription": "This project features a slideshow of beautiful images. You can navigate through the images using the left and right arrows."
     },
     {
@@ -27,7 +33,9 @@
         "description": "One more project with a single image.",
         "images": ["https://picsum.photos/800/600?random=5"],
         "technologies": ["Nature", "Canon"],
-        "links": { "live": "#", "github": "#" },
+        "links": [
+            { "name": "Live Demo", "url": "#", "type": "primary" }
+        ],
         "fullDescription": "A single stunning photograph of a landscape."
     },
     {
@@ -39,7 +47,10 @@
             "https://picsum.photos/800/600?random=7"
         ],
         "technologies": ["Urban", "Sony"],
-        "links": { "live": "#", "github": "#" },
+        "links": [
+            { "name": "Live Demo", "url": "#", "type": "primary" },
+            { "name": "Behance", "url": "#", "type": "secondary" }
+        ],
         "fullDescription": "A collection of urban photography."
     }
 ]
