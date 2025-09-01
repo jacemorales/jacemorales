@@ -4,8 +4,8 @@
         "title": "Single Image Project",
         "description": "A project with just one beautiful image.",
         "images": ["https://picsum.photos/800/600?random=1"],
-        "technologies": ["Photography", "Photoshop"],
-        "links": { "live": "#", "github": "#" },
+        "technologies": ["Photography"],
+        "links": { "live": "#", "github": "#", "linkedin": "#" },
         "fullDescription": "This project showcases a single, high-resolution image. It's a demonstration of a project with only one image."
     },
     {
