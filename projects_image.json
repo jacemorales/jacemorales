@@ -6,8 +6,7 @@
         "images": ["https://picsum.photos/800/600?random=1"],
         "technologies": ["Photography", "Photoshop"],
         "links": [
-            { "name": "Live Demo", "url": "#", "type": "primary" },
-            { "name": "GitHub", "url": "#", "type": "secondary" }
+            { "name": "Live Demo", "url": "#", "type": "primary" }
         ],
         "fullDescription": "This project showcases a single, high-resolution image. It's a demonstration of a project with only one image."
     },
