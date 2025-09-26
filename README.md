@@ -50,7 +50,11 @@
 ### 📊 GitHub Statistics
 
 <p align="center">
-  <a href="https://github.com/anuraghazra/github-readme-stats"><img src="https://github-readme-stats.vercel.app/api?username=jacemorales&hide=prs,issues,contribs&show_icons=true&include_all_commits=true&count_private=true&custom_title=GitHub%20Stats&line_height=24" alt="Jace Morales's GitHub Stats" />
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=jacemorales&theme=react&hide_border=true" alt="Commit Streak" />
+<img src="https://github-readme-stats.vercel.app/api?username=jacemorales&show_icons=true&hide=prs,issues,contribs&count_private=true&include_all_commits=true" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=jacemorales&theme=radical" />
+
 </a>
 </p>
 <p align="center">
