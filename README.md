@@ -51,13 +51,13 @@
 </p>
 
 <!-- Top languages (compact) -->
-<p>
-  <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jacemorales&layout=compact&theme=tokyonight&hide_border=true" />
+<p align="center">
+  <img  width="45%" alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jacemorales&layout=compact&theme=tokyonight&hide_border=true" />
 
 
 <!-- Profile summary details (commits last year, total commits, contributed to, etc.) -->
 
-  <img alt="Profile Details" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=jacemorales&theme=tokyonight" />
+  <img  width="45%" alt="Profile Details" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=jacemorales&theme=tokyonight" />
 </p>
 
 <!-- Trophies / accomplishments -->
