@@ -1,13 +1,6 @@
 <h1 align="center">Hi there, I'm Jace Morales 👋</h1>
-<p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=jacemorales&theme=radical" alt="jacemorales" /></a>
-</p>
 
-<p align="center">
-  <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="Jace Morales's Github Stats" src="https://github-readme-stats.vercel.app/api?username=jacemorales&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=1D2A3A" /></a>
-</p>
-
-I'm a passionate and creative Full-Stack Developer. I love building beautiful, responsive, and user-friendly websites and applications. 🚀
+I'm a passionate and creative Full-Stack Developer with a knack for turning complex problems into elegant, user-friendly solutions. I thrive on building beautiful, responsive, and highly functional websites and applications that leave a lasting impact. When I'm not coding, I'm exploring new technologies and pushing the boundaries of what's possible on the web. 🚀
 
 ---
 
@@ -26,13 +19,12 @@ I'm a passionate and creative Full-Stack Developer. I love building beautiful, r
 
 ### 🚀 My Projects
 
-| Project                   | Description                                          |
-| ------------------------- | ---------------------------------------------------- |
-| **Single Image Project**  | A project with just one beautiful image.             |
-| **Image Slideshow Project**| A project with multiple images in a slideshow.       |
-| **Multi-Image Showcase**  | Another project with several images.                 |
-| **Single Video Project**  | A project with a single video.                       |
-
+| Project                   | Description                                                                                             |
+| ------------------------- | ------------------------------------------------------------------------------------------------------- |
+| **Single Image Project**  | This project showcases a single, high-resolution image. It's a demonstration of a project with only one image. |
+| **Image Slideshow Project**| This project features a slideshow of beautiful images. You can navigate through the images using the left and right arrows. |
+| **Multi-Image Showcase**  | A collection of urban photography.                                                                      |
+| **Single Video Project**  | This project features a single video. Clicking the thumbnail will open the video in the modal.         |
 
 ---
 
@@ -52,4 +44,15 @@ I'm a passionate and creative Full-Stack Developer. I love building beautiful, r
   <blockquote>
     <h3>🚀 I'm currently open to new opportunities and collaborations. <br/> Let's build something great together! 🤝</h3>
   </blockquote>
+</p>
+
+---
+
+### 📊 GitHub Statistics
+
+<p align="center">
+  <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="Jace Morales's Github Stats" src="https://github-readme-stats.vercel.app/api?username=jacemorales&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=1D2A3A" /></a>
+</p>
+<p align="center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=jacemorales&theme=radical" alt="jacemorales" /></a>
 </p>
