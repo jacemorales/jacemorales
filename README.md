@@ -40,7 +40,7 @@
 
 ---
 
-## 📊 GitHub Stats & Widgets
+## 📊 GitHub Statistics
 <!-- Contribution streak / activity -->
 <p align="center">
   <img alt="GitHub Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=jacemorales&theme=tokyonight&hide_border=true" />
