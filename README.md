@@ -1,7 +1,8 @@
 <h1 align="center">Hi there, I'm Jace Morales 👋</h1>
 
-<h3 align="center">I'm a passionate and creative Full-Stack Developer specializing in turning complex problems into elegant, user-friendly solutions. I thrive on building beautiful, responsive, and highly functional websites and applications that leave a lasting impact. When I'm not coding, I'm exploring new technologies and pushing the boundaries of what's possible on the web. 🚀</h3>
-
+<blockquote>
+<h4 align="center">I'm a passionate and creative Full-Stack Developer specializing in turning complex problems into elegant, user-friendly solutions. I thrive on building beautiful, responsive, and highly functional websites and applications that leave a lasting impact. When I'm not coding, I'm exploring new technologies and pushing the boundaries of what's possible on the web. 🚀</h4>
+</blockquote>
 ---
 
 ### 🛠️ My Tech Stack
@@ -41,9 +42,7 @@
 ### 🤝 Let's Connect
 
 <p align="center">
-  <blockquote>
-    <h3>🚀 I'm currently open to new opportunities and collaborations. <br/> Let's build something great together! 🤝</h3>
-  </blockquote>
+  <b>💡 Currently open to opportunities and collaborations.<br/>Let’s build something amazing together!</b>
 </p>
 
 ---
@@ -51,7 +50,7 @@
 ### 📊 GitHub Statistics
 
 <p align="center">
-  <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="Jace Morales's Github Stats" src="https://github-readme-stats.vercel.app/api?username=jacemorales&show_icons=true&count_private=true&theme=gh-dark-mode-only&hide_border=true&hide=prs,issues,contribs&hide_rank=true" /></a>
+  <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="Jace Morales's Github Stats" src="https://github-readme-stats.vercel.app/api?username=jacemorales&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&hide=prs,issues,contribs&hide_rank=true" /></a>
 </p>
 <p align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=jacemorales&theme=radical" alt="jacemorales" /></a>
