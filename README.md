@@ -48,7 +48,7 @@
 
 <!-- Top languages (compact) -->
 <p align="center">
-  <img  width="438" alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jacemorales&layout=compact&theme=tokyonight&hide_border=true" />
+  <img  width="38%" alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jacemorales&layout=compact&theme=tokyonight&hide_border=true" />
 
 <!-- Main GitHub stats (stars, commits, prs, issues, etc.) -->
   <img  width="50%" alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=jacemorales&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight&hide_border=true" />
