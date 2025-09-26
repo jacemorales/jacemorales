@@ -7,7 +7,7 @@
 
 ---
 
-### 🛠️ My Tech Stack
+## 🛠️ My Tech Stack
 
 <p align="center">
   <a href="https://skillicons.dev">
@@ -21,7 +21,7 @@
 
 ---
 
-### 🚀 My Projects
+## 🚀 My Projects
 
 | Project                   | Description                                                                                             |
 | ------------------------- | ------------------------------------------------------------------------------------------------------- |
@@ -33,7 +33,7 @@
 
 ---
 
-### 📫 Get In Touch
+## 📫 Get In Touch
 
 <p align="center">
   <a href="mailto:jacemorales54321@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
@@ -43,7 +43,7 @@
 
 ---
 
-### 🤝 Let's Connect
+## 🤝 Let's Connect
 
 <h4>
   <blockquote>💡 Currently open to opportunities and collaborations.<br/>Let’s build something amazing together!</blockquote>
@@ -52,33 +52,33 @@
 
 ---
 
-### 📊 GitHub Statistics
-## 📊 GitHub Stats & Widgets
-
+# 📊 GitHub Stats & Widgets
+<!-- Main GitHub stats (stars, commits, prs, issues, etc.) -->
 <p align="center">
-  <!-- Primary stats (stars, commits, repos, etc.) -->
   <img alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=jacemorales&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight&hide_border=true" />
 </p>
 
+<!-- Top languages (compact) -->
 <p align="center">
-  <!-- Top languages (compact) -->
   <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jacemorales&layout=compact&theme=tokyonight&hide_border=true" />
 </p>
 
+<!-- Contribution streak / activity -->
 <p align="center">
-  <!-- Contribution activity graph -->
-  <img alt="Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=jacemorales&theme=react-dark&area=true" />
+  <img alt="GitHub Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=jacemorales&theme=tokyonight&hide_border=true" />
 </p>
 
+<!-- Profile summary details (commits last year, total commits, contributed to, etc.) -->
 <p align="center">
-  <!-- Commit streak / current streak -->
-  <img alt="Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=jacemorales&theme=tokyonight&hide_border=true" />
-  &nbsp;&nbsp;
-  <!-- Trophy / achievements -->
-  <img alt="Trophies" src="https://github-profile-trophy.vercel.app/?username=jacemorales&theme=radical&no-frame=true&margin-w=15" />
+  <img alt="Profile Details" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=jacemorales&theme=tokyonight" />
 </p>
 
+<!-- Trophies / accomplishments -->
 <p align="center">
-  <!-- Summary card (compact totals) -->
-  <img alt="Profile Summary" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=jacemorales&theme=tokyonight" />
+  <img alt="Trophies" src="https://github-profile-trophy.vercel.app/?username=jacemorales&theme=tokyonight&no-frame=true" />
+</p>
+
+<!-- Activity graph (contribution heatmap style) -->
+<p align="center">
+  <img alt="Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=jacemorales&theme=react-dark" />
 </p>
