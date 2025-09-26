@@ -44,20 +44,17 @@
   <img alt="GitHub Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=jacemorales&theme=tokyonight&hide_border=true" />
 </p>
 
-
-<!-- Main GitHub stats (stars, commits, prs, issues, etc.) -->
-<p align="center">
-  <img alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=jacemorales&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight&hide_border=true" />
-</p>
-
 <!-- Top languages (compact) -->
 <p align="center">
   <img  width="45%" alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jacemorales&layout=compact&theme=tokyonight&hide_border=true" />
 
+<!-- Main GitHub stats (stars, commits, prs, issues, etc.) -->
+  <img  width="45%" alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=jacemorales&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight&hide_border=true" />
+</p>
 
 <!-- Profile summary details (commits last year, total commits, contributed to, etc.) -->
-
-  <img  width="45%" alt="Profile Details" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=jacemorales&theme=tokyonight" />
+<p align="center">
+  <img alt="Profile Details" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=jacemorales&theme=tokyonight" />
 </p>
 
 <!-- Trophies / accomplishments -->
