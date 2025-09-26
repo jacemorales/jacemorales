@@ -42,8 +42,8 @@
 
 ## 📊 GitHub Stats & Widgets
 <!-- Contribution streak / activity -->
-<p align="center" width="100%">
-  <img alt="GitHub Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=jacemorales&theme=tokyonight&hide_border=true" />
+<p align="center">
+  <img width="100%" alt="GitHub Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=jacemorales&theme=tokyonight&hide_border=true" />
 </p>
 
 <!-- Top languages (compact) -->
@@ -55,8 +55,8 @@
 </p>
 
 <!-- Profile summary details (commits last year, total commits, contributed to, etc.) -->
-<p align="center" width="100%">
-  <img alt="Profile Details" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=jacemorales&theme=tokyonight" />
+<p align="center">
+  <img width="100%" alt="Profile Details" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=jacemorales&theme=tokyonight" />
 </p>
 
 <!-- Trophies / accomplishments -->
