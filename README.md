@@ -1,4 +1,4 @@
-<h1 align="center">Hi there, I'm Jace Morales 👋</h1>
+# <h1 align="center">Hi there, I'm Jace Morales 👋</h1>
 
 <blockquote>
 <h3>I'm a passionate and creative Full-Stack Developer specializing in turning complex problems into elegant, user-friendly solutions. I thrive on building beautiful, responsive, and highly functional websites and applications that leave a lasting impact. When I'm not coding, I'm exploring new technologies and pushing the boundaries of what's possible on the web. 🚀</h4>
@@ -53,6 +53,12 @@
 ---
 
 # 📊 GitHub Stats & Widgets
+<!-- Contribution streak / activity -->
+<p align="center">
+  <img alt="GitHub Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=jacemorales&theme=tokyonight&hide_border=true" />
+</p>
+
+
 <!-- Main GitHub stats (stars, commits, prs, issues, etc.) -->
 <p align="center">
   <img alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=jacemorales&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight&hide_border=true" />
@@ -61,11 +67,6 @@
 <!-- Top languages (compact) -->
 <p align="center">
   <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jacemorales&layout=compact&theme=tokyonight&hide_border=true" />
-</p>
-
-<!-- Contribution streak / activity -->
-<p align="center">
-  <img alt="GitHub Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=jacemorales&theme=tokyonight&hide_border=true" />
 </p>
 
 <!-- Profile summary details (commits last year, total commits, contributed to, etc.) -->
@@ -78,7 +79,6 @@
   <img alt="Trophies" src="https://github-profile-trophy.vercel.app/?username=jacemorales&theme=tokyonight&no-frame=true" />
 </p>
 
-<!-- Activity graph (contribution heatmap style) -->
 <p align="center">
-  <img alt="Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=jacemorales&theme=react-dark" />
+  <img alt="Activity Graph" src="https://github-readme-activity-graph.cyclic.app/graph?username=jacemorales&theme=react-dark" />
 </p>
