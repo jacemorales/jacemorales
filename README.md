@@ -1,6 +1,6 @@
 <h1 align="center">Hi there, I'm Jace Morales 👋</h1>
 
-<h3 align="center">I'm a passionate and creative Full-Stack Developer specializing in turning complex problems into elegant, user-friendly solutions. I thrive on building beautiful, responsive, and highly functional websites and applications that leave a lasting impact. When I'm not coding, I'm exploring new technologies and pushing the boundaries of what's possible on the web. 🚀</h3>
+<h6 align="center">I'm a passionate and creative Full-Stack Developer specializing in turning complex problems into elegant, user-friendly solutions. I thrive on building beautiful, responsive, and highly functional websites and applications that leave a lasting impact. When I'm not coding, I'm exploring new technologies and pushing the boundaries of what's possible on the web. 🚀</h6>
 
 ---
 
