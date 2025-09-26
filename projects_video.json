@@ -3,8 +3,8 @@
         "id": 1,
         "title": "Single Video Project",
         "description": "A project with a single video.",
-        "videos": ["http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"],
-        "thumbnail": "https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217",
+        "videos": ["h"],
+        "thumbnail": "",
         "technologies": ["Video Editing", "Premiere Pro"],
         "links": [
             { "name": "Watch", "url": "#", "type": "primary" }
@@ -16,11 +16,11 @@
         "title": "Video Slideshow Project",
         "description": "A project with multiple videos.",
         "videos": [
-            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
-            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+            "",
+            "",
+            ""
         ],
-        "thumbnail": "https://orange.blender.org/wp-content/themes/orange/images/header.jpg",
+        "thumbnail": "",
         "technologies": ["Filmmaking", "After Effects"],
         "links": [
             { "name": "Watch on YouTube", "url": "#", "type": "primary" },

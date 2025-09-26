@@ -429,22 +429,11 @@ section {
     margin: 0 auto; /* Center it in the grid cell */
 }
 
-.image-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('img/about_img.png');
-    background-size: contain;
-    background-position: center;
-    border-radius: 15px;
-}
-
 .image-placeholder {
-  font-size: 4rem;
-  color: white;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px;
+    height: -webkit-fill-available;
 }
 
 /* Projects Section */

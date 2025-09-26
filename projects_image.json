@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Single Image Project",
         "description": "A project with just one beautiful image.",
-        "images": ["https://picsum.photos/800/600?random=1"],
+        "images": ["projects/imgs/imga.png"],
         "technologies": ["Photography", "Photoshop"],
         "links": [
             { "name": "Live Demo", "url": "#", "type": "primary" },
@@ -16,9 +16,7 @@
         "title": "Image Slideshow Project",
         "description": "A project with multiple images in a slideshow.",
         "images": [
-            "https://picsum.photos/800/600?random=2",
-            "https://picsum.photos/800/600?random=3",
-            "https://picsum.photos/800/600?random=4"
+            "projects/imgs/img.jpg"
         ],
         "technologies": ["Photography", "Lightroom"],
         "links": [
@@ -31,7 +29,7 @@
         "id": 3,
         "title": "Another Single Image",
         "description": "One more project with a single image.",
-        "images": ["https://picsum.photos/800/600?random=5"],
+        "images": ["projects/imgs/imgc.png"],
         "technologies": ["Nature", "Canon"],
         "links": [
             { "name": "Live Demo", "url": "#", "type": "primary" }
@@ -42,10 +40,7 @@
         "id": 4,
         "title": "Multi-Image Showcase",
         "description": "Another project with several images.",
-        "images": [
-            "https://picsum.photos/800/600?random=6",
-            "https://picsum.photos/800/600?random=7"
-        ],
+        "images": [""],
         "technologies": ["Urban", "Sony"],
         "links": [
             { "name": "Live Demo", "url": "#", "type": "primary" },
