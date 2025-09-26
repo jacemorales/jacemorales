@@ -43,7 +43,7 @@
 ## 📊 GitHub Stats & Widgets
 <!-- Contribution streak / activity -->
 <p align="center">
-  <img width="100%" alt="GitHub Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=jacemorales&theme=tokyonight&hide_border=true" />
+  <img width="8%" alt="GitHub Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=jacemorales&theme=tokyonight&hide_border=true" />
 </p>
 
 <!-- Top languages (compact) -->
