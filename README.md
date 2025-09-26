@@ -3,6 +3,8 @@
 <blockquote>
 <h3>I'm a passionate and creative Full-Stack Developer specializing in turning complex problems into elegant, user-friendly solutions. I thrive on building beautiful, responsive, and highly functional websites and applications that leave a lasting impact. When I'm not coding, I'm exploring new technologies and pushing the boundaries of what's possible on the web. 🚀</h4>
 </blockquote>
+
+
 ---
 
 ### 🛠️ My Tech Stack
@@ -16,6 +18,7 @@
   <a href="https://jacemorales.netlify.app/dcs/tech_stack">View Full Stack</a>
 </p>
 
+
 ---
 
 ### 🚀 My Projects
@@ -26,6 +29,7 @@
 | **Image Slideshow Project**| This project features a slideshow of beautiful images. You can navigate through the images using the left and right arrows. |
 | **Multi-Image Showcase**  | A collection of urban photography.                                                                      |
 | **Single Video Project**  | This project features a single video. Clicking the thumbnail will open the video in the modal.         |
+
 
 ---
 
@@ -41,24 +45,40 @@
 
 ### 🤝 Let's Connect
 
-<p align="center">
-  <b>💡 Currently open to opportunities and collaborations.<br/>Let’s build something amazing together!</b>
-</p>
+<h4>
+  <blockquote>💡 Currently open to opportunities and collaborations.<br/>Let’s build something amazing together!</blockquote>
+</h4>
+
 
 ---
 
 ### 📊 GitHub Statistics
+## 📊 GitHub Stats & Widgets
 
 <p align="center">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-  <p align="center">
-  <!-- Card showing stars + total commits including private, hiding other stats -->
-  <img alt="Jace Morales GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=jacemorales&show_icons=true&count_private=true&hide=prs,issues,contribs&theme=tokyonight&hide_border=true" />
+  <!-- Primary stats (stars, commits, repos, etc.) -->
+  <img alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=jacemorales&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight&hide_border=true" />
 </p>
 
-
-</a>
-</p>
 <p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=jacemorales&theme=radical" alt="jacemorales" /></a>
+  <!-- Top languages (compact) -->
+  <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jacemorales&layout=compact&theme=tokyonight&hide_border=true" />
+</p>
+
+<p align="center">
+  <!-- Contribution activity graph -->
+  <img alt="Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=jacemorales&theme=react-dark&area=true" />
+</p>
+
+<p align="center">
+  <!-- Commit streak / current streak -->
+  <img alt="Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=jacemorales&theme=tokyonight&hide_border=true" />
+  &nbsp;&nbsp;
+  <!-- Trophy / achievements -->
+  <img alt="Trophies" src="https://github-profile-trophy.vercel.app/?username=jacemorales&theme=radical&no-frame=true&margin-w=15" />
+</p>
+
+<p align="center">
+  <!-- Summary card (compact totals) -->
+  <img alt="Profile Summary" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=jacemorales&theme=tokyonight" />
 </p>
