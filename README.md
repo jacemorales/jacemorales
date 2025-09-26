@@ -15,8 +15,11 @@ I'm a passionate and creative Full-Stack Developer. I love building beautiful, r
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,js,python" />
+    <img src="https://skillicons.dev/icons?i=js,ts,php,ruby,python,kotlin,dart" />
   </a>
+</p>
+<p align="center">
+  <a href="https://jacemorales.netlify.app/dcs/tech_stack">View Full Stack</a>
 </p>
 
 ---
@@ -36,8 +39,9 @@ I'm a passionate and creative Full-Stack Developer. I love building beautiful, r
 ### 📫 Get In Touch
 
 <p align="center">
-  <a href="mailto:jacemorales54321@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
-  <a href="https://github.com/jacemorales"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=hyper&logoColor=white"></a>
+  <a href="mailto:jacemorales54321@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white"></a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/jacemorales"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-255E63?style=flat-square&logo=hyper&logoColor=white"></a>
 </p>
 
 ---
@@ -45,5 +49,7 @@ I'm a passionate and creative Full-Stack Developer. I love building beautiful, r
 ### 🤝 Let's Connect
 
 <p align="center">
-  I'm currently open to new opportunities and collaborations. Let's build something great together!
+  <blockquote>
+    <h3>🚀 I'm currently open to new opportunities and collaborations. <br/> Let's build something great together! 🤝</h3>
+  </blockquote>
 </p>
