@@ -32,28 +32,30 @@
 
 ## 🤝 Let's Connect
 
-<h4>
-  <blockquote>💡 Currently open to opportunities and collaborations.<br/>Let’s build something amazing together!</blockquote>
-</h4>
+<blockquote>
+  <h4>
+  💡 Currently open to opportunities and collaborations.<br/>Let’s build something amazing together!
+  </h4>
+</blockquote>
 
 ---
 
 ## 📊 GitHub Stats & Widgets
 <!-- Contribution streak / activity -->
-<p align="center">
+<p align="center" width="100%">
   <img alt="GitHub Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=jacemorales&theme=tokyonight&hide_border=true" />
 </p>
 
 <!-- Top languages (compact) -->
 <p align="center">
-  <img  width="45%" alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jacemorales&layout=compact&theme=tokyonight&hide_border=true" />
+  <img  width="438" alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jacemorales&layout=compact&theme=tokyonight&hide_border=true" />
 
 <!-- Main GitHub stats (stars, commits, prs, issues, etc.) -->
-  <img  width="45%" alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=jacemorales&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight&hide_border=true" />
+  <img  width="50%" alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=jacemorales&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight&hide_border=true" />
 </p>
 
 <!-- Profile summary details (commits last year, total commits, contributed to, etc.) -->
-<p align="center">
+<p align="center" width="100%">
   <img alt="Profile Details" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=jacemorales&theme=tokyonight" />
 </p>
 
