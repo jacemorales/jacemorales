@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Single Video Project",
         "description": "A project with a single video.",
-        "videos": ["h"],
+        "videos": [""],
         "thumbnail": "",
         "technologies": ["Video Editing", "Premiere Pro"],
         "links": [
