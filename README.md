@@ -26,7 +26,7 @@
 | **StreamIt**        | A modern streaming web app with real-time playback, interactive chat, and smooth UI for creators & viewers. <br> *“Stream smarter. Connect faster.”* |
 | **Research Hub**        | Curated premium academic resources with advanced search and bookmarking for students and professionals. <br> *“Knowledge at your fingertips.”* |
 | **PayLink**             | A seamless payment platform enabling instant transactions in Naira using Paystack integration. <br> *“Pay instantly, stress-free.”* |
-| **MindHub**        | An engaging quiz app featuring *Tap-to-Reveal*, *Swipe UI*, and **AI-powered adaptive questions** for smarter learning. <br> *“Quiz. Learn. Grow.”* |
+| **MindHub**        | An engaging quiz app featuring *Tap-to-Reveal*, *Swipe UI*, and **AI-powered adaptive questions** for smarter learning. <br> *“Learn fast. Think faster.”* |
 | **JustChops**           | A full-blown snacks vending website with product browsing, cart, and smooth checkout flow. <br> *“Snack cravings, solved.”* |
 | **Sane**              | A sleek clothing brand website that blends fashion-forward design with an intuitive shopping experience. <br> *“Style made simple.”* |
 | **Artiseek**            | A freelancing marketplace like *Upwork* and *Fiverr*, built for both artisan services (tailors, plumbers, etc.) and digital services (design, dev, marketing). <br> *“Where craftsmanship meets digital talent.”* |
