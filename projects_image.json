@@ -1,51 +1,266 @@
 [
     {
         "id": 1,
-        "title": "Single Image Project",
-        "description": "A project with just one beautiful image.",
-        "images": ["projects/imgs/imga.png"],
-        "technologies": ["Photography", "Photoshop"],
-        "links": [
-            { "name": "Live Demo", "url": "#", "type": "primary" },
-            { "name": "GitHub", "url": "#", "type": "secondary" }
+        "title": "Academic Research Platform",
+        "description": "A full-stack academic platform for sharing, collaboration, and research paper management.",
+        "fullDescription": "The Academic Research Platform is a comprehensive full-stack web application built to streamline academic workflows. Researchers can upload, organize, and share research papers, collaborate with peers, and manage citation libraries. Features include user authentication with PHP backend, a dynamic ReactJS frontend for seamless navigation, and Docker containerization for consistent deployment across environments.",
+        "images": [
+            "projects/imgs/academic_files_research_platform.png",
+            "projects/imgs/academic_files_research_platform_.png",
+            "projects/imgs/academic_files_research_platform__.png"
         ],
-        "fullDescription": "This project showcases a single, high-resolution image. It's a demonstration of a project with only one image."
+        "technologies": ["JavaScript", "PHP", "ReactJS","Docker"]
     },
     {
         "id": 2,
-        "title": "Image Slideshow Project",
-        "description": "A project with multiple images in a slideshow.",
+        "title": "Artisan Portfolio Website",
+        "description": "A responsive portfolio website showcasing artisan craftsmanship and service offerings.",
+        "fullDescription": "The Artisan Portfolio Website is a beautifully crafted static website designed to showcase artisan work and attract potential clients. Built with clean semantic HTML, modern CSS styling, and vanilla JavaScript interactivity. The site features a gallery of completed works, service descriptions, contact information, and smooth animations. Fully responsive design ensures an excellent user experience across all device sizes from mobile to desktop.",
         "images": [
-            "projects/imgs/img.jpg"
+            "projects/imgs/artisan_website.png",
+            "projects/imgs/artisan_website_.png",
+            "projects/imgs/artisan_website__.png",
+            "projects/imgs/artisan_website___.png",
+            "projects/imgs/artisan_website____.png",
+            "projects/imgs/artisan_website_____.png"
         ],
-        "technologies": ["Photography", "Lightroom"],
-        "links": [
-            { "name": "Live Demo", "url": "#", "type": "primary" },
-            { "name": "GitHub", "url": "#", "type": "secondary" }
-        ],
-        "fullDescription": "This project features a slideshow of beautiful images. You can navigate through the images using the left and right arrows."
+        "technologies": ["HTML", "CSS", "JavaScript"]
     },
     {
         "id": 3,
-        "title": "Another Single Image",
-        "description": "One more project with a single image.",
-        "images": ["projects/imgs/imgc.png"],
-        "technologies": ["Nature", "Canon"],
-        "links": [
-            { "name": "Live Demo", "url": "#", "type": "primary" }
+        "title": "Corporate Brand Website",
+        "description": "A dynamic corporate brand site with product catalog, user accounts, and Redis caching.",
+        "fullDescription": "The Corporate Brand Website is a full-featured web application for showcasing a company's brand identity and product offerings. The ReactJS frontend delivers a polished user interface with product catalogs and interactive elements. A MySQL database persists product data, user accounts, and orders, while Redis provides lightning-fast caching for frequently accessed content. Combines modern styling with robust backend systems for optimal performance.",
+        "images": [
+            "projects/imgs/brand_site.png",
+            "projects/imgs/brand_site_.png",
+            "projects/imgs/brand_site__.png",
+            "projects/imgs/brand_site___.png",
+            "projects/imgs/brand_site____.png",
+            "projects/imgs/brand_site_____.png",
+            "projects/imgs/brand_site______.png",
+            "projects/imgs/brand_site_______.png",
+            "projects/imgs/brand_site________.png",
+            "projects/imgs/brand_site_________.png"
         ],
-        "fullDescription": "A single stunning photograph of a landscape."
+        "technologies": ["HTML", "CSS", "ReactJS", "Redis","MYSQL"]
     },
     {
         "id": 4,
-        "title": "Multi-Image Showcase",
-        "description": "Another project with several images.",
-        "images": [""],
-        "technologies": ["Urban", "Sony"],
-        "links": [
-            { "name": "Live Demo", "url": "#", "type": "primary" },
-            { "name": "Behance", "url": "#", "type": "secondary" }
+        "title": "Church Live Streaming Platform",
+        "description": "A React and Express-based platform for live church streaming and event management.",
+        "fullDescription": "The Church Live Streaming Platform enables churches to broadcast worship services and events to remote congregations online. Built with ReactJS for the frontend viewer experience and ExpressJS backend to manage streams, schedules, and archives. Deployed on Render for reliable, scalable hosting. Features include live video streaming integration, event scheduling, sermon archives, and donation capabilities for congregants.",
+        "images": [
+            "projects/imgs/church_streamin_site.png",
+            "projects/imgs/church_streamin_site_.png",
+            "projects/imgs/church_streamin_site__.png",
+            "projects/imgs/church_streamin_site___.png",
+            "projects/imgs/church_streamin_site____.png",
+            "projects/imgs/church_streamin_site_____.png",
+            "projects/imgs/church_streamin_site______.png",
+            "projects/imgs/church_streamin_site_______.png"
         ],
-        "fullDescription": "A collection of urban photography."
+        "technologies": ["ReactJS", "ExpressJS", "Render"]
+    },
+    {
+        "id": 5,
+        "title": "Comedy Event Booking Website",
+        "description": "A full-stack event platform for comedy show listings, ticket bookings, and event management.",
+        "fullDescription": "The Comedy Event Booking Website is a comprehensive event management platform for comedy venues and event organizers. Built with ReactJS frontend and ExpressJS backend, tested thoroughly with Postman to ensure robust API endpoints. Users can browse upcoming comedy shows, view performer profiles, book tickets online, and manage reservations. Deployed on Render for production hosting with database integration for bookings and user accounts.",
+        "images": [
+            "projects/imgs/comedy_event_website.png",
+            "projects/imgs/comedy_event_website_.png",
+            "projects/imgs/comedy_event_website__.png",
+            "projects/imgs/comedy_event_website___.png",
+            "projects/imgs/comedy_event_website____.png",
+            "projects/imgs/comedy_event_website_____.png",
+            "projects/imgs/comedy_event_website______.png"
+        ],
+        "technologies": ["ReactJS","Postman", "ExpressJS","Render"]
+    },
+    {
+        "id": 6,
+        "title": "Crypto Mining Dashboard",
+        "description": "A ReactJS-powered dashboard for monitoring cryptocurrency mining operations via API integration.",
+        "fullDescription": "The Crypto Mining Dashboard provides real-time monitoring and analytics for cryptocurrency mining operations. Built with ReactJS and integrated with external mining pool and cryptocurrency APIs. Users can track hash rates, mining earnings, GPU temperatures, and wallet balances across multiple mining rigs. The dashboard features interactive charts, automated alerts, and historical performance data visualization for informed decision-making.",
+        "images": [
+            "projects/imgs/crypto_mining_site.png",
+            "projects/imgs/crypto_mining_site_.png"
+        ],
+        "technologies": ["ReactJS", "API"]
+    },
+    {
+        "id": 7,
+        "title": "Figma UI/UX Design Collection",
+        "description": "A curated collection of professional UI/UX designs and interface prototypes created in Figma.",
+        "fullDescription": "This Figma UI/UX Design Collection showcases a variety of interface design projects demonstrating expertise in user experience and user interface design. Each design follows modern design principles including consistent visual hierarchy, intuitive navigation patterns, accessible color schemes, and responsive layout systems. Projects range from mobile app interfaces to web application dashboards, all crafted with attention to detail and user-centered design methodologies.",
+        "images": [
+            "projects/imgs/figma_ui.png",
+            "projects/imgs/figma_ui_.png",
+            "projects/imgs/figma_ui__.png",
+            "projects/imgs/figma_ui___.png",
+            "projects/imgs/figma_ui____.png",
+            "projects/imgs/figma_ui_____.png"
+        ],
+        "technologies": ["UI/UX Designs", "Figma"]
+    },
+    {
+        "id": 8,
+        "title": "Artisan Website Mobile UI Design",
+        "description": "Figma-designed mobile-responsive UI prototype for the artisan website with user feedback iteration.",
+        "fullDescription": "The Artisan Website Mobile UI Design project focuses on creating an optimized mobile experience for the artisan portfolio website. Designed in Figma with iterative improvements informed by user feedback sessions, the interface prioritizes thumb-friendly navigation, fast-loading image galleries optimized for cellular networks, and streamlined service inquiry flows. The design system maintains visual consistency across screen sizes while ensuring mobile users have equal access to all portfolio content and contact options.",
+        "images": [
+            "projects/imgs/figma_ui_for_mobile_version_of_artisan_website.png",
+            "projects/imgs/figma_ui_for_mobile_version_of_artisan_website_.png",
+            "projects/imgs/figma_ui_for_mobile_version_of_artisan_website__.png"
+        ],
+        "technologies": ["Figma", "User Feedback"]
+    },
+    {
+        "id": 9,
+        "title": "Payment Platform UI Design",
+        "description": "E-commerce payment interface design prototype for a secure payment processing platform.",
+        "fullDescription": "The Payment Platform UI Design is a comprehensive Figma prototype for an e-commerce payment processing interface. The design focuses on trust-building visual elements, streamlined checkout flows, and clear payment method selection interfaces. Includes dashboards for transaction history, payment status tracking, and receipt management. Designed with e-commerce best practices for conversion rate optimization while maintaining security indicators and PCI compliance visual cues.",
+        "images": [
+            "projects/imgs/figma_ui_for_payment_platform.png",
+            "projects/imgs/figma_ui_for_payment_platform_.png",
+            "projects/imgs/figma_ui_for_payment_platform__.png"
+        ],
+        "technologies": ["Figma","E-Commerce"]
+    },
+    {
+        "id": 10,
+        "title": "Snacks Vending Website UI Prototype",
+        "description": "Figma business prototype for a snacks vending platform with ordering and inventory UI.",
+        "fullDescription": "The Snacks Vending Website UI Prototype is a Figma-based business prototyping project exploring user flows for an online snacks vending platform. Includes customer-facing product browsing, cart management, and checkout interfaces alongside administrative inventory and dashboards inventory dashboards. The prototype validates business logic, information architecture, and user journey maps before full development.",
+        "images": [
+            "projects/imgs/figma_ui_for_snacks_vending_website.png",
+            "projects/imgs/figma_ui_for_snacks_vending_website_.png"
+        ],
+        "technologies": ["Figma","Business Prototyping"]
+    },
+    {
+        "id": 11,
+        "title": "Freelance Marketplace Platform",
+        "description": "A React and TailwindCSS-based freelance platform connecting clients and developers.",
+        "fullDescription": "The Freelance Marketplace Platform is a full-featured freelance marketplace connecting clients with freelance developers. Built with ReactJS and styled with TailwindCSS for a modern, responsive interface. Features include project posting, developer profiles, bidding systems, and project management tools. The platform facilitates communication between parties with messaging, secure payment milestones, and portfolio showcases for freelancers to display their work to potential clients.",
+        "images": [
+            "projects/imgs/freelance_platform.png",
+            "projects/imgs/freelance_platform_.png",
+            "projects/imgs/freelance_platform__.png",
+            "projects/imgs/freelance_platform___.png",
+            "projects/imgs/freelance_platform____.png",
+            "projects/imgs/freelance_platform_____.png"
+        ],
+        "technologies": ["ReactJS", "TailwindCSS", "VS Code", "Freelance"]
+    },
+    {
+        "id": 12,
+        "title": "Investment Platform Website",
+        "description": "An HTML/CSS/JS investment platform with Figma-designed UI and portfolio tracking.",
+        "fullDescription": "The Investment Platform Website provides users an interface for managing investment portfolios and market opportunities. The UI was designed in Figma with a focus on data visualization clarity and trust-driven aesthetics before implementation with clean HTML, modern CSS animations, and JavaScript interactivity. Users can track their holdings, view market trends, manage investment portfolios.",
+        "images": [
+            "projects/imgs/investment_site.png",
+            "projects/imgs/investment_site_.png"
+        ],
+        "technologies": ["HTML", "CSS", "JavaScript", "Figma"]
+    },
+    {
+        "id": 13,
+        "title": "Modern Brand Showcase Website",
+        "description": "A TypeScript React website with TailwindCSS showcasing modern brand identity.",
+        "fullDescription": "The Modern Brand Showcase Website is a sophisticated brand presence website built with TypeScript, ReactJS, and TailwindCSS with meticulous attention to UX design principles. Features immersive hero sections, animated page transitions, interactive brand story sections, and call-to-action optimizations. TypeScript ensures type safety throughout the component architecture while TailwindCSS enables rapid, consistent styling across all responsive breakpoints.",
+        "images": [
+            "projects/imgs/modern_brand_website.png",
+            "projects/imgs/modern_brand_website_.png",
+            "projects/imgs/modern_brand_website__.png",
+            "projects/imgs/modern_brand_website___.png"
+        ],
+        "technologies": ["TailwindCSS", "ReactJS", "UX","TypeScript"]
+    },
+    {
+        "id": 14,
+        "title": "Online Gadget E-Commerce Store",
+        "description": "Full-stack e-commerce store for gadgets with React, TypeScript, and Redis caching.",
+        "fullDescription": "The Online Gadget E-Commerce Store is a comprehensive online retail platform specializing in consumer electronics and gadgets. Built with ReactJS and TypeScript for a robust type-safe frontend. TailwindCSS provides responsive product grids and checkout flows. AJAX powers dynamic product filtering and cart updates without page reloads, while API integrations handle payment processing and inventory lookups. Redis caching optimizes product catalog loading speeds for a snappy shopping experience.",
+        "images": [
+            "projects/imgs/online_gadget_store.png",
+            "projects/imgs/online_gadget_store_.png",
+            "projects/imgs/online_gadget_store__.png",
+            "projects/imgs/online_gadget_store___.png",
+            "projects/imgs/online_gadget_store____.png",
+            "projects/imgs/online_gadget_store_____.png",
+            "projects/imgs/online_gadget_store______.png",
+            "projects/imgs/online_gadget_store_______.png",
+            "projects/imgs/online_gadget_store________.png"
+        ],
+        "technologies": ["ReactJS", "TailwindCSS","TypeScript", "AJAX","API","Redis"]
+    },
+    {
+        "id": 15,
+        "title": "Online Kitchen Telegram Bot",
+        "description": "Python and Django-powered Telegram bot for food ordering with menu management.",
+        "fullDescription": "The Online Kitchen Telegram Bot brings restaurant ordering directly to Telegram messaging platform. Built with Python and Django backend integrated with Telegram API, users can browse menus, place food orders, customize menu items, and receive order confirmations and delivery status updates seamlessly within the chat interface. Admin panel enables kitchen staff menu management and incoming orders.",
+        "images": [
+            "projects/imgs/online_kitchen_telegram_bot.png",
+            "projects/imgs/online_kitchen_telegram_bot_.png",
+            "projects/imgs/online_kitchen_telegram_bot__.png"
+        ],
+        "technologies": ["Python", "Telegram API", "Django"]
+    },
+    {
+        "id": 16,
+        "title": "Paystack Payment Integration Platform",
+        "description": "React payment platform integrating Paystack API for secure online transactions.",
+        "fullDescription": "The Paystack Payment Integration Platform provides businesses and individuals with seamless payment processing capabilities via the Paystack payment gateway. Built with ReactJS and integrated Paystack API. Users initiate, manage payment links, view transaction histories, and generate payment receipts. The platform supports multiple payment methods including card, bank transfer, and mobile money options across supported regions.",
+        "images": [
+            "projects/imgs/payment_platform.png",
+            "projects/imgs/payment_platform_.png",
+            "projects/imgs/payment_platform__.png",
+            "projects/imgs/payment_platform___.png",
+            "projects/imgs/payment_platform____.png"
+        ],
+        "technologies": ["Paystack API", "ReactJS","CSS","JavaScript"]
+    },
+    {
+        "id": 17,
+        "title": "Interactive Quiz Application",
+        "description": "A TypeScript and React-based quiz app with TailwindCSS and UX-focused interface.",
+        "fullDescription": "The Interactive Quiz Application is an engaging educational quiz platform built with TypeScript and ReactJS, styled with TailwindCSS. Users can take quizzes across various subjects with multiple question formats including multiple choice and timed challenges. The UX-optimized interface includes progress tracking, score displays at the end of each quiz, answer explanations for learning, and leaderboard rankings. TypeScript type safety ensures data integrity throughout the quiz engine.",
+        "images": [
+            "projects/imgs/quiz_app.png",
+            "projects/imgs/quiz_app_.png",
+            "projects/imgs/quiz_app__.png",
+            "projects/imgs/quiz_app___.png",
+            "projects/imgs/quiz_app____.png",
+            "projects/imgs/quiz_app_____.png",
+            "projects/imgs/quiz_app______.png",
+            "projects/imgs/quiz_app_______.png"
+        ],
+        "technologies": ["TypeScript", "ReactJS","TailwindCSS","UX"]
+    },
+    {
+        "id": 18,
+        "title": "Snacks Vending E-Commerce Website",
+        "description": "HTML/CSS/JS website for snacks vending with FontAwesome icons and online ordering.",
+        "fullDescription": "The Snacks Vending E-Commerce Website provides customers a simple, direct-to-market online presence for a snack vending business. Built with HTML structure, CSS styling, and JavaScript interactivity enhanced with FontAwesome icons visual polish. Customers browse snack catalog by category, add items to a shopping cart, and complete checkout with form-based ordering. Responsive design ensures the vending site works beautifully whether ordering from desktop or mobile devices.",
+        "images": [
+            "projects/imgs/snacks_vending_website.png",
+            "projects/imgs/snacks_vending_website_.png"
+        ],
+        "technologies": ["HTML", "CSS","JavaScript","FontAwesome"]
+    },
+    {
+        "id": 19,
+        "title": "VueJS AI Learning Application",
+        "description": "A VueJS learning app integrated with Gemini AI API and styled with TailwindCSS.",
+        "fullDescription": "The VueJS AI Learning Application combines VueJS framework with Google's Gemini AI API to deliver an intelligent interactive learning platform. Learners can access structured educational content, ask AI-powered tutoring questions, receive personalized explanations, and follow adaptive study plans. The UI was designed in Figma with engaging posters and visual learning aids, then implemented in VueJS with TailwindCSS to create a polished, responsive learning interface accessible across devices.",
+        "images": [
+            "projects/imgs/vuejs_learning_app_with_figma_ui_and_posters.png",
+            "projects/imgs/vuejs_learning_app_with_figma_ui_and_posters_.png",
+            "projects/imgs/vuejs_learning_app_with_figma_ui_and_posters__.png",
+            "projects/imgs/vuejs_learning_app_with_figma_ui_and_posters___.png"
+        ],
+        "technologies": ["VueJS", "Gemini API", "TailwindCSS"]
     }
 ]

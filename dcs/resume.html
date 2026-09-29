@@ -1,229 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jace Morales - Resume</title>
-  <style>
-    body {
-        font-family: 'system-ui', sans-serif;
-        line-height: 1.6;
-        background-color: #f4f4f4;
-        color: #333;
-        margin: 0;
-        padding: 0;
-    }
-    .resume-container {
-        max-width: 900px;
-        margin: 2rem auto;
-        background: #fff;
-        padding: 2rem;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    }
-    .resume-header {
-        text-align: center;
-        margin-bottom: 2rem;
-        border-bottom: 2px solid #eee;
-        padding-bottom: 1rem;
-    }
-    .resume-header h1 {
-        font-size: 2.5rem;
-        color: #333;
-        margin: 0;
-    }
-    .contact-info {
-        margin-top: 0.5rem;
-    }
-    .contact-info a {
-        color: #555;
-        text-decoration: none;
-        margin: 0 0.5rem;
-    }
-    .contact-info a:hover {
-        color: #007bff;
-    }
-    .resume-main {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 2rem;
-    }
-    .left-column, .right-column {
-        padding: 0;
-    }
-    h2 {
-        font-size: 1.5rem;
-        color: #333;
-        border-bottom: 2px solid #007bff;
-        padding-bottom: 0.5rem;
-        margin-bottom: 1rem;
-    }
-    .job {
-        margin-bottom: 1.5rem;
-    }
-    .job h3 {
-        font-size: 1.2rem;
-        margin: 0;
-    }
-    .job p {
-        margin: 0.2rem 0;
-    }
-    .skills-list, .certifications-list, .links-list, .interests-list {
-        list-style: none;
-        padding: 0;
-    }
-    .skills-list li, .certifications-list li, .links-list li, .interests-list li {
-        background: #eee;
-        padding: 0.5rem;
-        margin-bottom: 0.5rem;
-        border-radius: 5px;
-    }
-    @media print {
-        body {
-            background-color: #fff;
-        }
-        .resume-container {
-            box-shadow: none;
-            margin: 0;
-            padding: 1rem;
-        }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Jace Morales - Full Stack Web & Mobile Developer</title>
+<link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+<style>
+:root{--a:#1769aa;--t:#202124;--m:#5f6368;--l:#dfe3e8;--s:#f5f7f9}
+*{box-sizing:border-box}body{margin:0;background:#eef1f4;color:var(--t);font:13px/1.48 Arial,Helvetica,sans-serif}
+.resume{max-width:920px;margin:28px auto;background:#fff;padding:42px 48px;box-shadow:0 8px 30px rgba(0,0,0,.08)}
+header{border-bottom:2px solid var(--a);padding-bottom:18px;margin-bottom:24px}
+h1{margin:0;font-size:34px;letter-spacing:-.7px}.headline{margin:4px 0 12px;color:var(--a);font-size:16px;font-weight:700}
+.contact{display:flex;flex-wrap:wrap;gap:7px 14px;color:var(--m);font-size:12px}.contact a{color:inherit;text-decoration:none}
+.layout{display:grid;grid-template-columns:2fr 1fr;gap:34px}section{margin-bottom:24px}
+h2{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--a);border-bottom:1px solid var(--l);padding-bottom:6px;margin:0 0 12px}
+h3{margin:0;font-size:14.5px}.meta{margin:2px 0 7px;color:var(--m);font-size:12px}.job{margin-bottom:19px}
+ul{margin:7px 0 0 18px;padding:0}li{margin-bottom:5px}
+.skill{margin-bottom:10px}.skill strong{display:block;font-size:12px}.skill span{color:var(--m);font-size:12px}
+.tags{display:flex;flex-wrap:wrap;gap:5px}.tag{background:var(--s);border:1px solid var(--l);padding:4px 6px;border-radius:4px;font-size:11px}
+@media print{body{background:#fff}.resume{margin:0;max-width:none;box-shadow:none;padding:28px 34px}}
+@media(max-width:760px){.resume{margin:0;padding:28px 22px}.layout{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
-<div class="resume-container">
-    <header class="resume-header">
-        <h1>Jace Morales</h1>
-        <p class="contact-info">
-            <a href="mailto:jacemorales54321@gmail.com">jacemorales54321@gmail.com</a> |
-            <a href="https://jacemorales.netlify.app" target="_blank">Portfolio</a> |
-            <a href="https://www.linkedin.com/in/jace-morales-3abb04355" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/jacemorales" target="_blank">GitHub</a> |
-            <a href="https://t.me/jacemorales123" target="_blank">Telegram</a>
-        </p>
-    </header>
+<div class="resume">
+<header>
+<h1>Jace Morales</h1>
+<p class="headline">Full Stack Web &amp; Mobile Developer</p>
+<div class="contact">
+<a href="mailto:jacemorales54321@gmail.com">jacemorales54321@gmail.com</a>
+<a href="https://jacemorales.netlify.app/" target="_blank">Portfolio</a>
+<a href="https://www.linkedin.com/in/jace-morales-3abb04355" target="_blank">LinkedIn</a>
+<a href="https://github.com/jacemorales" target="_blank">GitHub</a>
+<a href="https://t.me/jacemorales123" target="_blank">Telegram</a>
+</div>
+</header>
 
-    <main class="resume-main">
-        <div class="left-column">
-            <section>
-                <h2>Personal Statement</h2>
-                <p>A highly skilled and results-driven Full Stack Web Developer with over 4 years of experience in designing, developing, and maintaining dynamic websites and applications. Specializing in the Front-end, Back-end, Mobile and Desktop Applications, I have a proven track record of delivering end-to-end solutions that meet business requirements, enhance user experiences, and drive technical innovation. I am adept at utilizing modern technologies and development frameworks, and I excel at collaborating with cross-functional teams to build seamless web experiences that are scalable, efficient, and secure.</p>
-            </section>
+<div class="layout">
+<main>
 
-            <section>
-                <h2>Work Experience</h2>
-                <div class="job">
-                    <h3>UI Developer</h3>
-                    <p><strong>Eazx Technologies</strong> | May 2025 - present</p>
-                    <ul>
-                        <li>Currently working on modern UI development projects.</li>
-                    </ul>
-                </div>
-                <div class="job">
-                    <h3>Web Development Project Manager</h3>
-                    <p><strong>CommonwealthAssembly Web Solutions</strong> | Jan 2024 - May 2025</p>
-                    <ul>
-                        <li>Lead full-stack development for a variety of client projects, overseeing both front-end and back-end implementation.</li>
-                        <li>Designed and developed responsive mobile-first websites using React and Angular for the front-end and Node.js for server-side operations.</li>
-                        <li>Integrated third-party APIs such as payment gateways, social media, and shipping solutions.</li>
-                        <li>Streamlined database management leveraging MySQL and MongoDB to optimize queries and improve data handling.</li>
-                        <li>Implemented security best practices including data encryption, secure authentication, and authorization protocols.</li>
-                        <li>Collaborated with UX/UI designers to enhance the user experience, ensuring interfaces are intuitive and meet customer expectations.</li>
-                    </ul>
-                </div>
-                <div class="job">
-                    <h3>Full Stack Web Developer</h3>
-                    <p><strong>Pixel Hub Digital Agency</strong> | Oct 2022 - Jan 2024</p>
-                    <ul>
-                        <li>Developed and maintained high-performance web applications utilizing ReactJS, Django, Flask, and PHP.</li>
-                        <li>Built RESTful APIs to support the client's core business processes.</li>
-                        <li>Assisted in migrating legacy systems to modern technologies and frameworks, improving system efficiency.</li>
-                        <li>Managed cloud-based infrastructure on Git, optimizing resource allocation for cost-efficiency and performance improvements.</li>
-                        <li>Mentored junior developers, providing training in front-end frameworks, back-end development practices, and debugging techniques.</li>
-                    </ul>
-                </div>
-                <div class="job">
-                    <h3>Senior Web Developer</h3>
-                    <p><strong>SpringValley Tech Innovations</strong> | Aug 2021 - Oct 2022</p>
-                    <ul>
-                        <li>Assisted in the development and maintenance of internal and client-facing websites, focusing on front-end technologies such as HTML, CSS, and JavaScript.</li>
-                        <li>Worked closely with senior developers to design and implement back-end solutions using PHP and MySQL.</li>
-                        <li>Participated in agile development sprints, collaborating with cross-functional teams to meet project deadlines.</li>
-                        <li>Conducted quality assurance testing, identifying and fixing bugs, and ensuring code was optimized for fast load times.</li>
-                    </ul>
-                </div>
-            </section>
+<section>
+<h2>Professional Summary</h2>
+<p>Results-driven <strong>Full Stack Web &amp; Mobile Developer with 4+ years of experience</strong> building and maintaining modern web applications and software solutions. Experienced across frontend, backend, databases, APIs, and mobile development, with a focus on responsive, scalable, maintainable, and user-focused applications. Comfortable working across the full development lifecycle—from requirements and interface development through backend integration, database design, testing, optimization, and delivery.</p>
+</section>
 
-            <section>
-                <h2>Certifications</h2>
-                <ul class="certifications-list">
-                    <li>Udacity - React Developer Nanodegree</li>
-                    <li>Microsoft 365 Certified Administrator Expert</li>
-                    <li>Coursera - Frontend Development with Vue.js</li>
-                    <li>IBM Back-End Development Professional Certificate</li>
-                    <li>freeCodeCamp - JavaScript Algorithms and Data Structures</li>
-                    <li>Coursera - Meta Front-End Developer Professional Certificate</li>
-                </ul>
-            </section>
-        </div>
+<section>
+<h2>Professional Experience</h2>
 
-        <div class="right-column">
-            <section>
-                <h2>Skills</h2>
-                <ul class="skills-list">
-                    <li><strong>Languages:</strong> HTML, CSS, Sass, JavaScript (ES6+), TypeScript, PHP, Ruby, Python, Kotlin, Dart</li>
-                    <li><strong>Frontend Frameworks:</strong> React, Vue, AngularJS, Next.js, jQuery, Lodash, UnderscoreJS, MeteorJS, Three.js</li>
-                    <li><strong>Backend Frameworks:</strong> Laravel (PHP), Ruby on Rails (Ruby), Django (Python), Flask (Python), FastAPI (Python), Express.js (Node.js), NestJS (Node.js)</li>
-                    <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, Redis</li>
-                    <li><strong>Styling Tools:</strong> Bootstrap, Tailwind CSS, Sass</li>
-                    <li><strong>Design Skills:</strong> UI/UX Design</li>
-                    <li><strong>DevOps & Tools:</strong> Git, GitHub, Docker, npm / yarn, Postman, VS Code, Firebase, Vercel, Netlify</li>
-                    <li><strong>Other:</strong> AJAX, REST, GraphQL</li>
-                </ul>
-            </section>
+<div class="job">
+<h3>UI Developer</h3>
+<p class="meta"><strong>Eazx Technologies</strong> | May 2025 – Present</p>
+<ul>
+<li>Develop and refine modern, responsive user interfaces with emphasis on usability, consistency, accessibility, and performance.</li>
+<li>Translate design requirements into reusable frontend components and production-ready interfaces.</li>
+<li>Collaborate with developers and designers to resolve interface issues and deliver polished user experiences.</li>
+</ul>
+</div>
 
-            <section>
-                <h2>Education</h2>
-                <p><strong>Bachelor’s Degree in Computer Science</strong><br>
-                Covenant University<br>
-                2016 – 2020</p>
-            </section>
+<div class="job">
+<h3>Web Development Project Manager</h3>
+<p class="meta"><strong>CommonwealthAssembly Web Solutions</strong> | Jan 2024 – May 2025</p>
+<ul>
+<li>Led full-stack development across multiple client projects, coordinating frontend, backend, database, and integration requirements.</li>
+<li>Designed and developed responsive, mobile-first applications using React, AngularJS, and Node.js.</li>
+<li>Integrated third-party services including payment gateways, social platforms, and shipping solutions through APIs.</li>
+<li>Worked with MySQL and MongoDB to structure application data, improve data handling, and optimize database operations.</li>
+<li>Implemented secure authentication, authorization, and data-protection practices across applications.</li>
+<li>Collaborated with UI/UX designers to translate designs into intuitive, responsive user experiences.</li>
+</ul>
+</div>
 
-            <section>
-                <h2>Languages</h2>
-                <p>English (Native)<br>
-                Spanish (Conversational)<br>
-                French (Conversational)</p>
-            </section>
+<div class="job">
+<h3>Full Stack Web Developer</h3>
+<p class="meta"><strong>Pixel Hub Digital Agency</strong> | Oct 2022 – Jan 2024</p>
+<ul>
+<li>Developed and maintained web applications using React.js, Django, Flask, PHP, and related web technologies.</li>
+<li>Designed and implemented RESTful APIs supporting core application and business workflows.</li>
+<li>Worked across frontend and backend layers to diagnose issues, implement features, and improve application reliability.</li>
+<li>Contributed to modernization of legacy systems by migrating functionality toward newer technologies and frameworks.</li>
+<li>Used Git-based version control and collaborative development workflows to manage application changes.</li>
+<li>Mentored junior developers on frontend development, backend practices, debugging, and problem solving.</li>
+</ul>
+</div>
 
-            <section>
-                <h2>Interests</h2>
-                <ul class="interests-list">
-                    <li>Problem Solving</li>
-                    <li>Creative Design</li>
-                    <li>Tech Trends</li>
-                    <li>Learning New Tools</li>
-                    <li>Open Source Contribution</li>
-                </ul>
-            </section>
-            <section>
-                <h2>Awards</h2>
-                <ul class="interests-list">
-                    <li>Developer of the Month</li>
-                    <li>Project Management Professional</li>
-                    <li>Employer Recognition: Exceptional Full-Stack Developer</li>
-                </ul>
-            </section>
-            <section>
-                <h2>References</h2>
-                <p><strong>Michael Egerton</strong><br>
-                Senior Web Developer - SpringValley Tech Innovations<br>
-                michealegerton342@gmail.com</p>
-                <p><strong>Eleazar Stanford</strong><br>
-                Full Stack Web Developer - Pixel Hub Digital Agency<br>
-                pixel.users818@gmail.com</p>
-            </section>
-        </div>
-    </main>
+<div class="job">
+<h3>Senior Web Developer</h3>
+<p class="meta"><strong>SpringValley Tech Innovations</strong> | Aug 2021 – Oct 2022</p>
+<ul>
+<li>Developed and maintained client-facing and internal websites using HTML, CSS, JavaScript, PHP, and MySQL.</li>
+<li>Contributed to backend implementation and database-driven web functionality.</li>
+<li>Participated in Agile development cycles and collaborated with cross-functional team members.</li>
+<li>Performed testing, debugging, and performance optimization to improve application quality and load times.</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2>Certifications</h2>
+<ul>
+<li>Udacity – React Developer Nanodegree</li>
+<li>Microsoft 365 Certified Administrator Expert</li>
+<li>Coursera – Frontend Development with Vue.js</li>
+<li>IBM – Back-End Development Professional Certificate</li>
+<li>freeCodeCamp – JavaScript Algorithms and Data Structures</li>
+<li>Coursera – Meta Front-End Developer Professional Certificate</li>
+</ul>
+</section>
+
+<section>
+<h2>Education</h2>
+<p><strong>Bachelor’s Degree in Computer Science</strong><br>Covenant University | 2016 – 2020</p>
+</section>
+</main>
+
+<aside>
+<section>
+<h2>Core Technologies</h2>
+<div class="skill"><strong>Frontend</strong><span>JavaScript (ES6+), TypeScript, React.js, Next.js, Vue.js, AngularJS, HTML5, CSS3, Tailwind CSS, Sass</span></div>
+<div class="skill"><strong>Backend</strong><span>Node.js, Express.js, NestJS, Python, Django, Flask, FastAPI, PHP, Laravel, Ruby on Rails</span></div>
+<div class="skill"><strong>Mobile</strong><span>React Native, Flutter, Kotlin, Dart</span></div>
+<div class="skill"><strong>Databases</strong><span>PostgreSQL, MySQL, MongoDB, Redis, NoSQL</span></div>
+<div class="skill"><strong>APIs &amp; Integration</strong><span>REST APIs, GraphQL, AJAX, Postman</span></div>
+<div class="skill"><strong>Cloud &amp; DevOps</strong><span>AWS, Docker, Git, GitHub, Firebase, Vercel, Netlify, Apache</span></div>
+<div class="skill"><strong>Development Tools</strong><span>Prisma, npm, Yarn, npx, VS Code, FileZilla</span></div>
+<div class="skill"><strong>AI &amp; Emerging Tech</strong><span>LLM Development, AI Agents, Three.js, Remotion</span></div>
+<div class="skill"><strong>Design</strong><span>UI/UX Design, Figma</span></div>
+</section>
+
+<section>
+<h2>Additional Skills</h2>
+<div class="tags">
+<span class="tag">Full Stack Development</span><span class="tag">Responsive Design</span><span class="tag">API Integration</span><span class="tag">Database Design</span><span class="tag">UI/UX</span><span class="tag">Agile</span><span class="tag">Debugging</span><span class="tag">Remote Collaboration</span>
+</div>
+</section>
+
+<section>
+<h2>Languages</h2>
+<p>English (Native)<br>Spanish (Conversational)<br>French (Conversational)</p>
+</section>
+
+<section>
+<h2>Recognition</h2>
+<ul><li>Developer of the Month</li><li>Project Management Professional</li><li>Employer Recognition: Exceptional Full-Stack Developer</li></ul>
+</section>
+
+<section>
+<h2>References</h2>
+<p><strong>Michael Egerton</strong><br>Senior Web Developer – SpringValley Tech Innovations<br>michealegerton342@gmail.com</p>
+<p><strong>Eleazar Stanford</strong><br>Full Stack Web Developer – Pixel Hub Digital Agency<br>pixel.users818@gmail.com</p>
+</section>
+</aside>
+</div>
 </div>
 </body>
 </html>

@@ -46,22 +46,23 @@ class VideoStreamHandler(http.server.SimpleHTTPRequestHandler):
     
     def handle_video_request(self, file_path):
         """Handle video requests with range support for streaming"""
+        headers_sent = False
         try:
             file_size = os.path.getsize(file_path)
-            
+
             # Check for Range header
             range_header = self.headers.get('Range')
-            
+
             if range_header:
                 # Parse range header
                 range_match = range_header.replace('bytes=', '').split('-')
                 start = int(range_match[0]) if range_match[0] else 0
                 end = int(range_match[1]) if range_match[1] else file_size - 1
-                
+
                 # Ensure end doesn't exceed file size
                 end = min(end, file_size - 1)
                 content_length = end - start + 1
-                
+
                 # Send partial content response
                 self.send_response(206)
                 self.send_header('Content-Type', 'video/mp4')
@@ -69,18 +70,22 @@ class VideoStreamHandler(http.server.SimpleHTTPRequestHandler):
                 self.send_header('Content-Range', f'bytes {start}-{end}/{file_size}')
                 self.send_header('Accept-Ranges', 'bytes')
                 self.end_headers()
-                
+                headers_sent = True
+
                 # Send video chunk
                 with open(file_path, 'rb') as video_file:
                     video_file.seek(start)
                     chunk_size = 8192
                     remaining = content_length
-                    
+
                     while remaining > 0:
                         chunk = video_file.read(min(chunk_size, remaining))
                         if not chunk:
                             break
-                        self.wfile.write(chunk)
+                        try:
+                            self.wfile.write(chunk)
+                        except (ConnectionAbortedError, ConnectionResetError, BrokenPipeError):
+                            return
                         remaining -= len(chunk)
             else:
                 # Send entire file
@@ -89,18 +94,26 @@ class VideoStreamHandler(http.server.SimpleHTTPRequestHandler):
                 self.send_header('Content-Length', str(file_size))
                 self.send_header('Accept-Ranges', 'bytes')
                 self.end_headers()
-                
+                headers_sent = True
+
                 with open(file_path, 'rb') as video_file:
                     chunk_size = 8192
                     while True:
                         chunk = video_file.read(chunk_size)
                         if not chunk:
                             break
-                        self.wfile.write(chunk)
-                        
+                        try:
+                            self.wfile.write(chunk)
+                        except (ConnectionAbortedError, ConnectionResetError, BrokenPipeError):
+                            return
+
+        except (ConnectionAbortedError, ConnectionResetError, BrokenPipeError) as e:
+            print(f"Client disconnected during video stream: {e}")
+            return
         except Exception as e:
             print(f"Error serving video: {e}")
-            self.send_error(500, "Internal server error")
+            if not headers_sent:
+                self.send_error(500, "Internal server error")
     
     def log_message(self, format, *args):
         """Custom log message to show cleaner output"""

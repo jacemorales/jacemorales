@@ -1,11 +1,11 @@
 [
     {
         "id": 1,
-        "title": "Single Video Project",
+        "title": "Academic Platform For Research Files",
         "description": "A project with a single video.",
-        "videos": [""],
-        "thumbnail": "",
-        "technologies": ["Video Editing", "Premiere Pro"],
+        "videos": ["projects/vids/academic_platform_for_research_files.mp4"],
+        "thumbnail": "projects/imgs/academic_files_research_platform.png",
+        "technologies": ["Video Editing", "Premiere Prooooo"],
         "links": [
             { "name": "Watch", "url": "#", "type": "primary" }
         ],
@@ -13,13 +13,154 @@
     },
     {
         "id": 2,
-        "title": "Video Slideshow Project",
+        "title": "AI Website Duplication",
         "description": "A project with multiple videos.",
-        "videos": [
-            "",
-            "",
-            ""
+        "videos": ["projects/vids/ai_website_duplication.mp4"],
+        "thumbnail": "",
+        "technologies": ["Filmmaking", "After Effects"],
+        "links": [
+            { "name": "Watch on YouTube", "url": "#", "type": "primary" },
+            { "name": "Source Files", "url": "#", "type": "secondary" }
         ],
+        "fullDescription": "This project showcases multiple videos. You can navigate through them using the left and right arrows."
+    },
+    {
+        "id": 3,
+        "title": "Interactive Quiz App for Students",
+        "description": "A project with multiple videos.",
+        "videos": ["projects/vids/interactive_quiz_app_for_students.mp4"],
+        "thumbnail": "",
+        "technologies": ["Filmmaking", "After Effects"],
+        "links": [
+            { "name": "Watch on YouTube", "url": "#", "type": "primary" },
+            { "name": "Source Files", "url": "#", "type": "secondary" }
+        ],
+        "fullDescription": "This project showcases multiple videos. You can navigate through them using the left and right arrows."
+    },
+    {
+        "id": 4,
+        "title": "Learning Quiz App with AI Integration",
+        "description": "A project with multiple videos.",
+        "videos": ["projects/vids/learning_quiz_app_with_ai_integration.mp4"],
+        "thumbnail": "",
+        "technologies": ["Filmmaking", "After Effects"],
+        "links": [
+            { "name": "Watch on YouTube", "url": "#", "type": "primary" },
+            { "name": "Source Files", "url": "#", "type": "secondary" }
+        ],
+        "fullDescription": "This project showcases multiple videos. You can navigate through them using the left and right arrows."
+    },
+    {
+        "id": 5,
+        "title": "Online Payment Website with Paystack API Integration",
+        "description": "A project with multiple videos.",
+        "videos": ["projects/vids/online_payment_website_with_paystack_api_integration.mp4"],
+        "thumbnail": "",
+        "technologies": ["Filmmaking", "After Effects"],
+        "links": [
+            { "name": "Watch on YouTube", "url": "#", "type": "primary" },
+            { "name": "Source Files", "url": "#", "type": "secondary" }
+        ],
+        "fullDescription": "This project showcases multiple videos. You can navigate through them using the left and right arrows."
+    },
+    {
+        "id": 6,
+        "title": "ReactJS DOM Efficiency",
+        "description": "A project with multiple videos.",
+        "videos": ["projects/vids/reactjs_dom_efficiency.mp4"],
+        "thumbnail": "",
+        "technologies": ["Filmmaking", "After Effects"],
+        "links": [
+            { "name": "Watch on YouTube", "url": "#", "type": "primary" },
+            { "name": "Source Files", "url": "#", "type": "secondary" }
+        ],
+        "fullDescription": "This project showcases multiple videos. You can navigate through them using the left and right arrows."
+    },
+    {
+        "id": 7,
+        "title": "Snacks Vending Website",
+        "description": "A project with multiple videos.",
+        "videos": ["projects/vids/snacks_vending_website.mp4"],
+        "thumbnail": "",
+        "technologies": ["Filmmaking", "After Effects"],
+        "links": [
+            { "name": "Watch on YouTube", "url": "#", "type": "primary" },
+            { "name": "Source Files", "url": "#", "type": "secondary" }
+        ],
+        "fullDescription": "This project showcases multiple videos. You can navigate through them using the left and right arrows."
+    },
+    {
+        "id": 8,
+        "title": "Artisan Website",
+        "description": "A project with multiple videos.",
+        "videos": ["projects/vids/stylishly_designed_artisan_website.mp4"],
+        "thumbnail": "",
+        "technologies": ["Filmmaking", "After Effects"],
+        "links": [
+            { "name": "Watch on YouTube", "url": "#", "type": "primary" },
+            { "name": "Source Files", "url": "#", "type": "secondary" }
+        ],
+        "fullDescription": "This project showcases multiple videos. You can navigate through them using the left and right arrows."
+    },
+    {
+        "id": 9,
+        "title": "Quiz App with Gemini AI Integration",
+        "description": "A project with multiple videos.",
+        "videos": ["projects/vids/testing_my_gemini_ai_integration_in_my_quiz_app.mp4"],
+        "thumbnail": "",
+        "technologies": ["Filmmaking", "After Effects"],
+        "links": [
+            { "name": "Watch on YouTube", "url": "#", "type": "primary" },
+            { "name": "Source Files", "url": "#", "type": "secondary" }
+        ],
+        "fullDescription": "This project showcases multiple videos. You can navigate through them using the left and right arrows."
+    },
+
+
+    {
+        "id": 10,
+        "title": "#Developer Tools",
+        "description": "A project with multiple videos.",
+        "videos": ["projects/vids/z_developer_code_autocomplete_tool_in_action.mp4"],
+        "thumbnail": "",
+        "technologies": ["Filmmaking", "After Effects"],
+        "links": [
+            { "name": "Watch on YouTube", "url": "#", "type": "primary" },
+            { "name": "Source Files", "url": "#", "type": "secondary" }
+        ],
+        "fullDescription": "This project showcases multiple videos. You can navigate through them using the left and right arrows."
+    },
+    {
+        "id": 11,
+        "title": "#Developer Meme",
+        "description": "A project with multiple videos.",
+        "videos": ["projects/vids/z_developer_meme_the_reason_our_internet_connection_finishes_fast.mp4"],
+        "thumbnail": "",
+        "technologies": ["Filmmaking", "After Effects"],
+        "links": [
+            { "name": "Watch on YouTube", "url": "#", "type": "primary" },
+            { "name": "Source Files", "url": "#", "type": "secondary" }
+        ],
+        "fullDescription": "This project showcases multiple videos. You can navigate through them using the left and right arrows."
+    },
+    {
+        "id": 12,
+        "title": "#Developer Meme",
+        "description": "A project with multiple videos.",
+        "videos": ["projects/vids/z_developer_fun_moment_of_trying_to_train_chatgpt.mp4"],
+        "thumbnail": "",
+        "technologies": ["Filmmaking", "After Effects"],
+        "links": [
+            { "name": "Watch on YouTube", "url": "#", "type": "primary" },
+            { "name": "Source Files", "url": "#", "type": "secondary" }
+        ],
+        "fullDescription": "This project showcases multiple videos. You can navigate through them using the left and right arrows."
+    },
+    {
+        "id": 13,
+        "title": "#Developer Meme",
+        "description": "A project with multiple videos.",
+        "videos": ["projects/vids/z_developer_fun_moments.mp4"],
         "thumbnail": "",
         "technologies": ["Filmmaking", "After Effects"],
         "links": [
